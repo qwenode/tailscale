@@ -38,7 +38,7 @@ import (
 var (
 	dev        = flag.Bool("dev", false, "run in localhost development mode")
 	addr       = flag.String("a", ":443", "server HTTPS listen address, in form \":port\", \"ip:port\", or for IPv6 \"[ip]:port\". If the IP is omitted, it defaults to all interfaces.")
-	httpPort   = flag.Int("http-port", 80, "The port on which to serve HTTP. Set to -1 to disable. The listener is bound to the same IP (if any) as specified in the -a flag.")
+	httpPort   = flag.Int("http-port", -1, "The port on which to serve HTTP. Set to -1 to disable. The listener is bound to the same IP (if any) as specified in the -a flag.")
 	stunPort   = flag.Int("stun-port", 3478, "The UDP port on which to serve STUN. The listener is bound to the same IP (if any) as specified in the -a flag.")
 	configPath = flag.String("c", "", "config file path")
 	certMode   = flag.String("certmode", "letsencrypt", "mode for getting a cert. possible options: manual, letsencrypt")
@@ -177,17 +177,9 @@ func main() {
 	mux.Handle("/", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")
 		w.WriteHeader(200)
-		io.WriteString(w, `<html><body>
-<h1>DERP</h1>
-<p>
-  This is a
-  <a href="https://tailscale.com/">Tailscale</a>
-  <a href="https://pkg.go.dev/tailscale.com/derp">DERP</a>
-  server.
-</p>
-`)
+		io.WriteString(w, "\n")
 		if tsweb.AllowDebugAccess(r) {
-			io.WriteString(w, "<p>Debug info at <a href='/debug/'>/debug/</a>.</p>\n")
+			io.WriteString(w, "\n")
 		}
 	}))
 	debug := tsweb.Debugger(mux)
@@ -269,7 +261,7 @@ func main() {
 			// access (for which trivial safe policies work just
 			// fine), and by DERP clients which don't obey any of
 			// these browser-centric headers anyway.
-			w.Header().Set("Strict-Transport-Security", "max-age=63072000; includeSubDomains")
+			w.Header().Set("Strict-Transport-Security", "max-age=52022000; includeSubDomains")
 			w.Header().Set("Content-Security-Policy", "default-src 'none'; frame-ancestors 'none'; form-action 'none'; base-uri 'self'; block-all-mixed-content; plugin-types 'none'")
 			mux.ServeHTTP(w, r)
 		})
@@ -310,7 +302,7 @@ func probeHandler(w http.ResponseWriter, r *http.Request) {
 	case "HEAD", "GET":
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 	default:
-		http.Error(w, "bogus probe method", http.StatusMethodNotAllowed)
+		http.Error(w, "method", http.StatusMethodNotAllowed)
 	}
 }
 
