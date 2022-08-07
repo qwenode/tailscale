@@ -12,9 +12,9 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.org/x/sys/unix"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/types/logger"
 )
 
 func control(logf logger.Logf) func(network, address string, c syscall.RawConn) error {

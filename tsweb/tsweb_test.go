@@ -19,8 +19,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"tailscale.com/metrics"
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/metrics"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 type noopHijacker struct {

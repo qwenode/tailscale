@@ -11,14 +11,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/net/flowtrack"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/tstime/rate"
+	"github.com/qwenode/tailscale/types/ipproto"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/netipx"
-	"tailscale.com/envknob"
-	"tailscale.com/net/flowtrack"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/packet"
-	"tailscale.com/tstime/rate"
-	"tailscale.com/types/ipproto"
-	"tailscale.com/types/logger"
 )
 
 // Filter is a stateful packet filter.

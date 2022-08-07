@@ -12,9 +12,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/util/dnsname"
 	dns "golang.org/x/net/dns/dnsmessage"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/util/dnsname"
 )
 
 func mkDNSRequest(domain dnsname.FQDN, tp dns.Type) []byte {

@@ -11,10 +11,10 @@ import (
 	"net/netip"
 	"os/exec"
 
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"go4.org/netipx"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/monitor"
 )
 
 // For now this router only supports the WireGuard userspace implementation.

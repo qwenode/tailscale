@@ -15,11 +15,11 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/qwenode/tailscale/types/key"
 	"go4.org/mem"
 	"golang.zx2c4.com/wireguard/conn"
 	"golang.zx2c4.com/wireguard/device"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/types/key"
 )
 
 func TestDeviceConfig(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 	"fmt"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/version"
 )
 
 var versionCmd = &ffcli.Command{

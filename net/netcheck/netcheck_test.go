@@ -17,11 +17,11 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/stun"
-	"tailscale.com/net/stun/stuntest"
-	"tailscale.com/tailcfg"
-	"tailscale.com/util/strs"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/stun"
+	"github.com/qwenode/tailscale/net/stun/stuntest"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/util/strs"
 )
 
 func TestHairpinSTUN(t *testing.T) {

@@ -17,16 +17,16 @@ import (
 	"time"
 
 	ole "github.com/go-ole/go-ole"
+	"github.com/qwenode/tailscale/health"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/util/multierr"
+	"github.com/qwenode/tailscale/wgengine/winnet"
 	"go4.org/netipx"
 	"golang.org/x/sys/windows"
 	"golang.zx2c4.com/wireguard/tun"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/health"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/util/multierr"
-	"tailscale.com/wgengine/winnet"
 )
 
 var wintunLinkLocal = netip.MustParseAddr("fe80::99d0:ec2d:b2e7:536b")

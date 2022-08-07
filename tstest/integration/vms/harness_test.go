@@ -24,12 +24,12 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest/integration"
+	"github.com/qwenode/tailscale/tstest/integration/testcontrol"
+	"github.com/qwenode/tailscale/types/dnstype"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/net/proxy"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest/integration"
-	"tailscale.com/tstest/integration/testcontrol"
-	"tailscale.com/types/dnstype"
 )
 
 type Harness struct {

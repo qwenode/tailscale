@@ -15,7 +15,7 @@ import (
 
 	"github.com/dave/jennifer/jen"
 	"github.com/iancoleman/strcase"
-	"tailscale.com/tstest/integration/vms"
+	"github.com/qwenode/tailscale/tstest/integration/vms"
 )
 
 func main() {

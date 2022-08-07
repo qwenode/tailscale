@@ -8,7 +8,7 @@ import (
 	"errors"
 	"net/netip"
 
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 // An OSConfigurator applies DNS settings to the operating system.

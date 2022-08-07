@@ -7,8 +7,8 @@ package netstack
 import (
 	"reflect"
 
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/router"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/router"
 )
 
 func init() {

@@ -9,7 +9,7 @@ import (
 	"errors"
 	"time"
 
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/version"
 )
 
 // Poller scans the systems for listening ports periodically and sends

@@ -10,11 +10,11 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/dnsname"
+	"github.com/qwenode/tailscale/util/winutil"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/registry"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/dnsname"
-	"tailscale.com/util/winutil"
 )
 
 const (

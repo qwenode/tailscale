@@ -13,7 +13,7 @@ import (
 	"sort"
 
 	"github.com/fxamacker/cbor/v2"
-	"tailscale.com/types/tkatype"
+	"github.com/qwenode/tailscale/types/tkatype"
 )
 
 // Authority is a Tailnet Key Authority. This type is the main coupling

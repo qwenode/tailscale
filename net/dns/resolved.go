@@ -16,12 +16,12 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
+	"github.com/qwenode/tailscale/health"
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/dnsname"
 	"golang.org/x/sys/unix"
-	"tailscale.com/health"
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/dnsname"
 )
 
 // resolvedListenAddr is the listen address of the resolved stub resolver.

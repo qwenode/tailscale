@@ -16,12 +16,12 @@ import (
 	"strings"
 	"sync"
 
-	"tailscale.com/atomicfile"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/paths"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/mak"
+	"github.com/qwenode/tailscale/atomicfile"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/paths"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/mak"
 )
 
 // Provider returns a StateStore for the provided path.

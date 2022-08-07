@@ -10,9 +10,9 @@ import (
 	"context"
 	"time"
 
-	"tailscale.com/ipn"
-	"tailscale.com/kube"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/kube"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // Store is an ipn.StateStore that uses a Kubernetes Secret for persistence.

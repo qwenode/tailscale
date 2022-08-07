@@ -10,7 +10,7 @@ package netns
 import (
 	"syscall"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func control(logger.Logf) func(network, address string, c syscall.RawConn) error {

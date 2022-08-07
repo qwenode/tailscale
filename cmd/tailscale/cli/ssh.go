@@ -18,10 +18,10 @@ import (
 	"strings"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/version"
 )
 
 var sshCmd = &ffcli.Command{

@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // TryConfigFileMigration carefully copies the contents of oldFile to

@@ -8,11 +8,11 @@ package persist
 import (
 	"fmt"
 
-	"tailscale.com/types/key"
-	"tailscale.com/types/structs"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/structs"
 )
 
-//go:generate go run tailscale.com/cmd/cloner -type=Persist
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner -type=Persist
 
 // Persist is the JSON type stored on disk on nodes to remember their
 // settings between runs.

@@ -15,15 +15,15 @@ import (
 	"sort"
 	"strings"
 
-	"tailscale.com/hostinfo"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/net/tshttpproxy"
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/net/tshttpproxy"
 )
 
 // LoginEndpointForProxyDetermination is the URL used for testing
 // which HTTP proxy the system should use.
-var LoginEndpointForProxyDetermination = "https://controlplane.tailscale.com/"
+var LoginEndpointForProxyDetermination = "https://controlplane.github.com/qwenode/tailscale/"
 
 // Tailscale returns the current machine's Tailscale interface, if any.
 // If none is found, all zero values are returned.

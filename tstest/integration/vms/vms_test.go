@@ -26,12 +26,12 @@ import (
 	"time"
 
 	"github.com/pkg/sftp"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/tstest/integration"
+	"github.com/qwenode/tailscale/types/logger"
 	expect "github.com/tailscale/goexpect"
 	"golang.org/x/crypto/ssh"
 	"golang.org/x/sync/semaphore"
-	"tailscale.com/tstest"
-	"tailscale.com/tstest/integration"
-	"tailscale.com/types/logger"
 )
 
 const (

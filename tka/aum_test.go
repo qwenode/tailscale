@@ -10,8 +10,8 @@ import (
 
 	"github.com/fxamacker/cbor/v2"
 	"github.com/google/go-cmp/cmp"
+	"github.com/qwenode/tailscale/types/tkatype"
 	"golang.org/x/crypto/blake2s"
-	"tailscale.com/types/tkatype"
 )
 
 func TestSerialization(t *testing.T) {

@@ -14,7 +14,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"tailscale.com/client/tailscale/apitype"
+	"github.com/qwenode/tailscale/client/tailscale/apitype"
 )
 
 // DNSNameServers is returned when retrieving the list of nameservers.

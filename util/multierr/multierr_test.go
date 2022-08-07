@@ -10,7 +10,7 @@ import (
 
 	qt "github.com/frankban/quicktest"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"tailscale.com/util/multierr"
+	"github.com/qwenode/tailscale/util/multierr"
 )
 
 func TestAll(t *testing.T) {

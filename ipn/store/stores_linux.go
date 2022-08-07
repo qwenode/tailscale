@@ -7,10 +7,10 @@ package store
 import (
 	"strings"
 
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/store/awsstore"
-	"tailscale.com/ipn/store/kubestore"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/store/awsstore"
+	"github.com/qwenode/tailscale/ipn/store/kubestore"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func init() {

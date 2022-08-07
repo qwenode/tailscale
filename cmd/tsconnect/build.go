@@ -14,7 +14,7 @@ import (
 	"path/filepath"
 
 	esbuild "github.com/evanw/esbuild/pkg/api"
-	"tailscale.com/util/precompress"
+	"github.com/qwenode/tailscale/util/precompress"
 )
 
 func runBuild() {

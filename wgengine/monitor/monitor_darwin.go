@@ -10,10 +10,10 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.org/x/net/route"
 	"golang.org/x/sys/unix"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/types/logger"
 )
 
 const debugRouteMessages = false

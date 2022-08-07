@@ -34,17 +34,17 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/qwenode/tailscale/client/tailscale"
+	"github.com/qwenode/tailscale/disco"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/metrics"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/pad32"
+	"github.com/qwenode/tailscale/version"
 	"go4.org/mem"
 	"golang.org/x/sync/errgroup"
 	"golang.org/x/time/rate"
-	"tailscale.com/client/tailscale"
-	"tailscale.com/disco"
-	"tailscale.com/envknob"
-	"tailscale.com/metrics"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/pad32"
-	"tailscale.com/version"
 )
 
 var debug = envknob.Bool("DERP_DEBUG_LOGS")
@@ -952,7 +952,7 @@ func (c *sclient) handleFrameSendPacket(ft frameType, fl uint32) error {
 // dropReason is why we dropped a DERP frame.
 type dropReason int
 
-//go:generate go run tailscale.com/cmd/addlicense -year 2021 -file dropreason_string.go go run golang.org/x/tools/cmd/stringer -type=dropReason -trimprefix=dropReason
+//go:generate go run github.com/qwenode/tailscale/cmd/addlicense -year 2021 -file dropreason_string.go go run golang.org/x/tools/cmd/stringer -type=dropReason -trimprefix=dropReason
 
 const (
 	dropReasonUnknownDest      dropReason = iota // unknown destination pubkey

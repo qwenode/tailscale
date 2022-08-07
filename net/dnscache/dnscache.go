@@ -20,9 +20,9 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/envknob"
-	"tailscale.com/util/cloudenv"
-	"tailscale.com/util/singleflight"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/util/cloudenv"
+	"github.com/qwenode/tailscale/util/singleflight"
 )
 
 var single = &Resolver{

@@ -9,11 +9,11 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/endian"
 	"golang.org/x/sys/windows"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/endian"
 )
 
 func interfaceIndex(iface *winipcfg.IPAdapterAddresses) uint32 {

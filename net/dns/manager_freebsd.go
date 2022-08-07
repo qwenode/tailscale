@@ -9,7 +9,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func NewOSConfigurator(logf logger.Logf, _ string) (OSConfigurator, error) {

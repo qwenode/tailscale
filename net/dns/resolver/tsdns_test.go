@@ -22,14 +22,14 @@ import (
 	"time"
 
 	miekdns "github.com/miekg/dns"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/util/dnsname"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"golang.org/x/net/dns/dnsmessage"
 	dns "golang.org/x/net/dns/dnsmessage"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/tstest"
-	"tailscale.com/types/dnstype"
-	"tailscale.com/util/dnsname"
-	"tailscale.com/wgengine/monitor"
 )
 
 var (

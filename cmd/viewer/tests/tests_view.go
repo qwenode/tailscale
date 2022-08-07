@@ -12,10 +12,10 @@ import (
 	"net/netip"
 
 	"go4.org/mem"
-	"tailscale.com/types/views"
+	"github.com/qwenode/tailscale/types/views"
 )
 
-//go:generate go run tailscale.com/cmd/cloner  -clonefunc=false -type=StructWithPtrs,StructWithoutPtrs,Map,StructWithSlices
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner  -clonefunc=false -type=StructWithPtrs,StructWithoutPtrs,Map,StructWithSlices
 
 // View returns a readonly view of StructWithPtrs.
 func (p *StructWithPtrs) View() StructWithPtrsView {

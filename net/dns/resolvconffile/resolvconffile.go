@@ -20,7 +20,7 @@ import (
 	"os"
 	"strings"
 
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 // Path is the canonical location of resolv.conf.

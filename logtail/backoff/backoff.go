@@ -10,7 +10,7 @@ import (
 	"math/rand"
 	"time"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // Backoff tracks state the history of consecutive failures and sleeps

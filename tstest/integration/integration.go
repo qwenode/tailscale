@@ -30,17 +30,17 @@ import (
 	"time"
 
 	"github.com/klauspost/compress/zstd"
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/derp/derphttp"
+	"github.com/qwenode/tailscale/logtail"
+	"github.com/qwenode/tailscale/net/stun/stuntest"
+	"github.com/qwenode/tailscale/smallzstd"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/nettype"
+	"github.com/qwenode/tailscale/version"
 	"go4.org/mem"
-	"tailscale.com/derp"
-	"tailscale.com/derp/derphttp"
-	"tailscale.com/logtail"
-	"tailscale.com/net/stun/stuntest"
-	"tailscale.com/smallzstd"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/nettype"
-	"tailscale.com/version"
 )
 
 // CleanupBinaries cleans up any resources created by calls to BinaryDir, TailscaleBinary, or TailscaledBinary.
@@ -92,7 +92,7 @@ func buildTestBinaries() (string, error) {
 	if err != nil {
 		return "", err
 	}
-	err = build(bindir, "tailscale.com/cmd/tailscaled", "tailscale.com/cmd/tailscale")
+	err = build(bindir, "github.com/qwenode/tailscale/cmd/tailscaled", "github.com/qwenode/tailscale/cmd/tailscale")
 	if err != nil {
 		os.RemoveAll(bindir)
 		return "", err

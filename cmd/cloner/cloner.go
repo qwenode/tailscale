@@ -22,7 +22,7 @@ import (
 	"os"
 	"strings"
 
-	"tailscale.com/util/codegen"
+	"github.com/qwenode/tailscale/util/codegen"
 )
 
 var (
@@ -80,7 +80,7 @@ func main() {
 		w("}")
 	}
 	cloneOutput := pkg.Name + "_clone.go"
-	if err := codegen.WritePackageFile("tailscale.com/cmd/cloner", pkg, cloneOutput, it, buf); err != nil {
+	if err := codegen.WritePackageFile("github.com/qwenode/tailscale/cmd/cloner", pkg, cloneOutput, it, buf); err != nil {
 		log.Fatal(err)
 	}
 }

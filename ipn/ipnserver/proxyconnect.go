@@ -15,8 +15,8 @@ import (
 	"net/http"
 	"time"
 
-	"tailscale.com/logpolicy"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/logpolicy"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // handleProxyConnectConn handles a CONNECT request to

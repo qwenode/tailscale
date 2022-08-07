@@ -12,8 +12,8 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/net/packet"
-	"tailscale.com/types/ipproto"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/types/ipproto"
 )
 
 type Snapshot struct {

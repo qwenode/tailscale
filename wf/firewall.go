@@ -12,9 +12,9 @@ import (
 	"net/netip"
 	"os"
 
+	"github.com/qwenode/tailscale/net/netaddr"
 	"golang.org/x/sys/windows"
 	"inet.af/wf"
-	"tailscale.com/net/netaddr"
 )
 
 // Known addresses.

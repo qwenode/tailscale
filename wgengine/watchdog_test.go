@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 func TestWatchdog(t *testing.T) {

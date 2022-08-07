@@ -7,7 +7,7 @@
 
 package magicsock
 
-import "tailscale.com/types/opt"
+import "github.com/qwenode/tailscale/types/opt"
 
 // All knobs are disabled on iOS and Wasm.
 // Further, they're const, so the toolchain can produce smaller binaries.

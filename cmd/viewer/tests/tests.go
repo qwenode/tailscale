@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-// Package tests serves a list of tests for tailscale.com/cmd/viewer.
+// Package tests serves a list of tests for github.com/qwenode/tailscale/cmd/viewer.
 package tests
 
 import (
@@ -10,7 +10,7 @@ import (
 	"net/netip"
 )
 
-//go:generate go run tailscale.com/cmd/viewer --type=StructWithPtrs,StructWithoutPtrs,Map,StructWithSlices
+//go:generate go run github.com/qwenode/tailscale/cmd/viewer --type=StructWithPtrs,StructWithoutPtrs,Map,StructWithSlices
 
 type StructWithoutPtrs struct {
 	Int int

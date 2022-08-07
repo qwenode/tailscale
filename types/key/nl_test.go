@@ -9,7 +9,7 @@ import (
 	"crypto/ed25519"
 	"testing"
 
-	"tailscale.com/tka"
+	"github.com/qwenode/tailscale/tka"
 )
 
 func TestNLPrivate(t *testing.T) {

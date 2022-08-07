@@ -14,8 +14,8 @@ import (
 	"net/http"
 	"strings"
 
-	"tailscale.com/client/tailscale"
-	"tailscale.com/tsnet"
+	"github.com/qwenode/tailscale/client/tailscale"
+	"github.com/qwenode/tailscale/tsnet"
 )
 
 var (

@@ -20,10 +20,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/util/winutil"
 	"github.com/tailscale/certstore"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/util/winutil"
 )
 
 var getMachineCertificateSubjectOnce struct {

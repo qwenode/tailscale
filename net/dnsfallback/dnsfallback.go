@@ -22,10 +22,10 @@ import (
 	"net/url"
 	"time"
 
-	"tailscale.com/net/netns"
-	"tailscale.com/net/tlsdial"
-	"tailscale.com/net/tshttpproxy"
-	"tailscale.com/tailcfg"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/net/tlsdial"
+	"github.com/qwenode/tailscale/net/tshttpproxy"
+	"github.com/qwenode/tailscale/tailcfg"
 )
 
 func Lookup(ctx context.Context, host string) ([]netip.Addr, error) {
@@ -122,7 +122,7 @@ func bootstrapDNSMap(ctx context.Context, serverName string, serverIP netip.Addr
 }
 
 // dnsMap is the JSON type returned by the DERP /bootstrap-dns handler:
-// https://derp10.tailscale.com/bootstrap-dns
+// https://derp10.github.com/qwenode/tailscale/bootstrap-dns
 type dnsMap map[string][]netip.Addr
 
 // getDERPMap returns some DERP map. The DERP servers also run a fallback

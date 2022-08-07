@@ -12,10 +12,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/types/logger"
 )
 
 var (

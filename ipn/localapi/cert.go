@@ -34,11 +34,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/version/distro"
 	"golang.org/x/crypto/acme"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/types/logger"
-	"tailscale.com/version/distro"
 )
 
 // Process-wide cache. (A new *Handler is created per connection,

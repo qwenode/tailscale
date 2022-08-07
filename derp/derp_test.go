@@ -23,11 +23,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/net/nettest"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/mem"
 	"golang.org/x/time/rate"
-	"tailscale.com/net/nettest"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
 )
 
 func TestClientInfoUnmarshal(t *testing.T) {

@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.org/x/sys/windows/registry"
-	"tailscale.com/types/logger"
 )
 
 const (

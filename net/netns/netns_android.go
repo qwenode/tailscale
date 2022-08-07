@@ -12,7 +12,7 @@ import (
 	"sync"
 	"syscall"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 var (

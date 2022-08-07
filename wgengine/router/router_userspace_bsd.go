@@ -14,12 +14,12 @@ import (
 	"os/exec"
 	"runtime"
 
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/version"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"go4.org/netipx"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/types/logger"
-	"tailscale.com/version"
-	"tailscale.com/wgengine/monitor"
 )
 
 type userspaceBSDRouter struct {

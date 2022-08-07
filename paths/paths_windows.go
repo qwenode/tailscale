@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"strings"
 
+	"github.com/qwenode/tailscale/util/winutil"
 	"golang.org/x/sys/windows"
-	"tailscale.com/util/winutil"
 )
 
 // ensureStateDirPerms applies a restrictive ACL to the directory specified by dirPath.

@@ -13,9 +13,9 @@ import (
 	"syscall"
 	"unsafe"
 
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/util/endian"
 	"golang.org/x/sys/windows"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/util/endian"
 )
 
 // See https://docs.microsoft.com/en-us/windows/win32/api/iphlpapi/nf-iphlpapi-getextendedtcptable

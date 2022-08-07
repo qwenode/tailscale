@@ -9,8 +9,8 @@ import (
 	"context"
 	"time"
 
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // WaitFor retries try for up to maxWait.

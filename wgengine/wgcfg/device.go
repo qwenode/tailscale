@@ -8,11 +8,11 @@ import (
 	"io"
 	"sort"
 
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/multierr"
 	"golang.zx2c4.com/wireguard/conn"
 	"golang.zx2c4.com/wireguard/device"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/multierr"
 )
 
 // NewDevice returns a wireguard-go Device configured for Tailscale use.

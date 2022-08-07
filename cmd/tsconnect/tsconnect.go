@@ -8,7 +8,7 @@
 //     with a reload.
 //   - build: builds the site and writes it to dist/
 //   - serve: serves the site from dist/ (embedded in the binary)
-package main // import "tailscale.com/cmd/tsconnect"
+package main // import "github.com/qwenode/tailscale/cmd/tsconnect"
 
 import (
 	"flag"

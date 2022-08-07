@@ -18,10 +18,10 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/views"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/views"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 // Status represents the entire state of the IPN network.
@@ -127,7 +127,7 @@ type PeerStatus struct {
 	TailscaleIPs []netip.Addr // Tailscale IP(s) assigned to this node
 
 	// Tags are the list of ACL tags applied to this node.
-	// See tailscale.com/tailcfg#Node.Tags for more information.
+	// See github.com/qwenode/tailscale/tailcfg#Node.Tags for more information.
 	Tags *views.Slice[string] `json:",omitempty"`
 
 	// PrimaryRoutes are the routes this node is currently the primary

@@ -11,13 +11,13 @@ import (
 	"strings"
 	"testing"
 
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnserver"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/safesocket"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/netstack"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnserver"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/netstack"
 )
 
 func TestRunMultipleAccepts(t *testing.T) {

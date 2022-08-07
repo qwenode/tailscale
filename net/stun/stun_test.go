@@ -10,7 +10,7 @@ import (
 	"net"
 	"testing"
 
-	"tailscale.com/net/stun"
+	"github.com/qwenode/tailscale/net/stun"
 )
 
 // TODO(bradfitz): fuzz this.

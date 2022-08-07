@@ -31,12 +31,12 @@ import (
 
 	"github.com/creack/pty"
 	"github.com/pkg/sftp"
+	"github.com/qwenode/tailscale/cmd/tailscaled/childproc"
+	"github.com/qwenode/tailscale/tempfork/gliderlabs/ssh"
+	"github.com/qwenode/tailscale/types/logger"
 	"github.com/u-root/u-root/pkg/termios"
 	gossh "golang.org/x/crypto/ssh"
 	"golang.org/x/sys/unix"
-	"tailscale.com/cmd/tailscaled/childproc"
-	"tailscale.com/tempfork/gliderlabs/ssh"
-	"tailscale.com/types/logger"
 )
 
 func init() {

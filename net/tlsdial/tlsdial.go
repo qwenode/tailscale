@@ -21,7 +21,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"tailscale.com/envknob"
+	"github.com/qwenode/tailscale/envknob"
 )
 
 var counterFallbackOK int32 // atomic

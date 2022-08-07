@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"time"
 
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 var (

@@ -14,12 +14,12 @@ import (
 	"os"
 	"time"
 
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/osshare"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
 	"golang.org/x/sys/windows/svc/mgr"
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/osshare"
 )
 
 func init() {

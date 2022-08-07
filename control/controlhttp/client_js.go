@@ -10,10 +10,10 @@ import (
 	"net"
 	"net/url"
 
+	"github.com/qwenode/tailscale/control/controlbase"
+	"github.com/qwenode/tailscale/net/dnscache"
+	"github.com/qwenode/tailscale/types/key"
 	"nhooyr.io/websocket"
-	"tailscale.com/control/controlbase"
-	"tailscale.com/net/dnscache"
-	"tailscale.com/types/key"
 )
 
 // Variant of Dial that tunnels the request over WebSockets, since we cannot do

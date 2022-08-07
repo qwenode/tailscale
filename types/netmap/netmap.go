@@ -13,9 +13,9 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/wgengine/filter"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/wgengine/filter"
 )
 
 // NetworkMap is the current state of the world.

@@ -37,9 +37,9 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/client/tailscale"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tsnet"
+	"github.com/qwenode/tailscale/client/tailscale"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tsnet"
 )
 
 var (

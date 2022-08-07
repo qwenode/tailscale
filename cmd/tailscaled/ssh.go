@@ -8,4 +8,4 @@
 package main
 
 // Force registration of tailssh with LocalBackend.
-import _ "tailscale.com/ssh/tailssh"
+import _ "github.com/qwenode/tailscale/ssh/tailssh"

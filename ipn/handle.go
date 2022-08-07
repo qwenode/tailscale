@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
 )
 
 type Handle struct {

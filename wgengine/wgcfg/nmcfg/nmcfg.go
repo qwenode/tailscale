@@ -11,11 +11,11 @@ import (
 	"net/netip"
 	"strings"
 
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/wgengine/wgcfg"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
 )
 
 func nodeDebugName(n *tailcfg.Node) string {

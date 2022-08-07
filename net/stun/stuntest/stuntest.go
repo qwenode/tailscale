@@ -15,9 +15,9 @@ import (
 	"sync"
 	"testing"
 
-	"tailscale.com/net/stun"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/nettype"
+	"github.com/qwenode/tailscale/net/stun"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/nettype"
 )
 
 type stunStats struct {

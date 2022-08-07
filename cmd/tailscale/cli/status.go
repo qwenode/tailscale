@@ -18,11 +18,11 @@ import (
 	"strings"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/util/dnsname"
 	"github.com/toqueteos/webbrowser"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/util/dnsname"
 )
 
 var statusCmd = &ffcli.Command{

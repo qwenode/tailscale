@@ -11,7 +11,7 @@ import (
 	"net/netip"
 	"sync"
 
-	"tailscale.com/net/netaddr"
+	"github.com/qwenode/tailscale/net/netaddr"
 )
 
 // ChromeOSVMRange returns the subset of the CGNAT IPv4 range used by
@@ -26,7 +26,7 @@ var chromeOSRange oncePrefix
 
 // CGNATRange returns the Carrier Grade NAT address range that
 // is the superset range that Tailscale assigns out of.
-// See https://tailscale.com/kb/1015/100.x-addresses.
+// See https://github.com/qwenode/tailscale/kb/1015/100.x-addresses.
 // Note that Tailscale does not assign out of the ChromeOSVMRange.
 func CGNATRange() netip.Prefix {
 	cgnatRange.Do(func() { mustPrefix(&cgnatRange.v, "100.64.0.0/10") })

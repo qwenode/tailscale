@@ -27,13 +27,13 @@ import (
 	"time"
 
 	"github.com/klauspost/compress/zstd"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/smallzstd"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/mem"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/smallzstd"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
 )
 
 const msgLimit = 1 << 20 // encrypted message length limit
@@ -360,7 +360,7 @@ func (s *Server) getUser(nodeKey key.NodePublic) (*tailcfg.User, *tailcfg.Login)
 		Provider:      "testcontrol",
 		LoginName:     loginName,
 		DisplayName:   displayName,
-		ProfilePicURL: "https://tailscale.com/static/images/marketing/team-carney.jpg",
+		ProfilePicURL: "https://github.com/qwenode/tailscale/static/images/marketing/team-carney.jpg",
 		Domain:        domain,
 	}
 	user := &tailcfg.User{

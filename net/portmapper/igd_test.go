@@ -15,8 +15,8 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"tailscale.com/net/netaddr"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // TestIGD is an IGD (Intenet Gateway Device) for testing. It supports fake

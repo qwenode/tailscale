@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/logtail"
+	"github.com/qwenode/tailscale/logtail"
 )
 
 func main() {

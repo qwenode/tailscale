@@ -9,9 +9,9 @@ import (
 	"errors"
 	"os"
 
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/mak"
 	"go4.org/mem"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/mak"
 )
 
 func NewOSConfigurator(logf logger.Logf, ifName string) (OSConfigurator, error) {

@@ -10,11 +10,11 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
 	"golang.zx2c4.com/wireguard/device"
-	"tailscale.com/syncs"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/wgcfg"
 )
 
 // A Logger is a wireguard-go log wrapper that cleans up and rewrites log lines.

@@ -17,7 +17,7 @@ import (
 	"testing"
 	"text/template"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 var (

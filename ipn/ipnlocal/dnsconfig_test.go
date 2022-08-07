@@ -10,14 +10,14 @@ import (
 	"reflect"
 	"testing"
 
-	"tailscale.com/ipn"
-	"tailscale.com/net/dns"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
-	"tailscale.com/types/dnstype"
-	"tailscale.com/types/netmap"
-	"tailscale.com/util/cloudenv"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/net/dns"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/util/cloudenv"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 func ipps(ippStrs ...string) (ipps []netip.Prefix) {

@@ -19,10 +19,10 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/control/controlbase"
-	"tailscale.com/net/socks5"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/control/controlbase"
+	"github.com/qwenode/tailscale/net/socks5"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 type httpTestParam struct {

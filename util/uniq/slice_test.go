@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"testing"
 
-	"tailscale.com/util/uniq"
+	"github.com/qwenode/tailscale/util/uniq"
 )
 
 func TestModifySlice(t *testing.T) {

@@ -8,7 +8,7 @@
 package magicsock
 
 import (
-	"tailscale.com/envknob"
+	"github.com/qwenode/tailscale/envknob"
 )
 
 // Various debugging and experimental tweakables, set by environment

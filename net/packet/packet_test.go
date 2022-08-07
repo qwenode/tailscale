@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"testing"
 
-	"tailscale.com/tstest"
-	"tailscale.com/types/ipproto"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/ipproto"
 )
 
 const (

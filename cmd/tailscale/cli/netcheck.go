@@ -18,12 +18,12 @@ import (
 	"time"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn"
-	"tailscale.com/net/netcheck"
-	"tailscale.com/net/portmapper"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/net/netcheck"
+	"github.com/qwenode/tailscale/net/portmapper"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 var netcheckCmd = &ffcli.Command{

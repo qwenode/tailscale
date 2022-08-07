@@ -12,15 +12,15 @@ import (
 	"os/exec"
 
 	"github.com/insomniacslk/dhcp/dhcpv4"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/types/ipproto"
 	"golang.org/x/sys/unix"
 	"golang.zx2c4.com/wireguard/tun"
 	"gvisor.dev/gvisor/pkg/tcpip"
 	"gvisor.dev/gvisor/pkg/tcpip/header"
 	"gvisor.dev/gvisor/pkg/tcpip/network/ipv4"
 	"gvisor.dev/gvisor/pkg/tcpip/transport/udp"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/packet"
-	"tailscale.com/types/ipproto"
 )
 
 // TODO: this was randomly generated once. Maybe do it per process start? But

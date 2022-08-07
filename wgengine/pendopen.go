@@ -9,14 +9,14 @@ import (
 	"runtime"
 	"time"
 
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/flowtrack"
-	"tailscale.com/net/packet"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/net/tstun"
-	"tailscale.com/types/ipproto"
-	"tailscale.com/util/mak"
-	"tailscale.com/wgengine/filter"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/flowtrack"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/net/tstun"
+	"github.com/qwenode/tailscale/types/ipproto"
+	"github.com/qwenode/tailscale/util/mak"
+	"github.com/qwenode/tailscale/wgengine/filter"
 )
 
 const tcpTimeoutBeforeDebug = 5 * time.Second

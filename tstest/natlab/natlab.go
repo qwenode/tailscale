@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/net/netaddr"
+	"github.com/qwenode/tailscale/net/netaddr"
 )
 
 var traceOn, _ = strconv.ParseBool(os.Getenv("NATLAB_TRACE"))

@@ -8,7 +8,7 @@ import (
 	"net"
 	"testing"
 
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 func TestGetList(t *testing.T) {

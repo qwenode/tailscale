@@ -26,16 +26,16 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/derp/derphttp"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/portmapper"
-	"tailscale.com/net/tshttpproxy"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/monitor"
+	"github.com/qwenode/tailscale/derp/derphttp"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/portmapper"
+	"github.com/qwenode/tailscale/net/tshttpproxy"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 )
 
 var debugArgs struct {

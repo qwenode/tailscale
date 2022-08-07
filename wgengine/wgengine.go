@@ -9,15 +9,15 @@ import (
 	"net/netip"
 	"time"
 
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/dns"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/netmap"
-	"tailscale.com/wgengine/filter"
-	"tailscale.com/wgengine/monitor"
-	"tailscale.com/wgengine/router"
-	"tailscale.com/wgengine/wgcfg"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/dns"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/wgengine/filter"
+	"github.com/qwenode/tailscale/wgengine/monitor"
+	"github.com/qwenode/tailscale/wgengine/router"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
 )
 
 // Status is the Engine status.

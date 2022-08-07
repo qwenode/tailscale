@@ -7,7 +7,7 @@ package packet
 import (
 	"encoding/binary"
 
-	"tailscale.com/types/ipproto"
+	"github.com/qwenode/tailscale/types/ipproto"
 )
 
 // icmp6HeaderLength is the size of the ICMPv6 packet header, not

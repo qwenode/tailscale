@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 func TestAllocIPs(t *testing.T) {

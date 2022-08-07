@@ -9,12 +9,12 @@ import (
 	"runtime"
 	"testing"
 
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/net/tstun"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/filter"
 	"gvisor.dev/gvisor/pkg/refs"
-	"tailscale.com/net/packet"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/net/tstun"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/filter"
 )
 
 // TestInjectInboundLeak tests that injectInbound doesn't leak memory.

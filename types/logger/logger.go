@@ -22,7 +22,7 @@ import (
 
 	"context"
 
-	"tailscale.com/envknob"
+	"github.com/qwenode/tailscale/envknob"
 )
 
 // Logf is the basic Tailscale logger type: a printf-like func.

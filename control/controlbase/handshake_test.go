@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	tsnettest "tailscale.com/net/nettest"
-	"tailscale.com/types/key"
+	tsnettest "github.com/qwenode/tailscale/net/nettest"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 func TestHandshake(t *testing.T) {

@@ -28,11 +28,11 @@ import (
 	"strings"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/ipn"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/preftype"
-	"tailscale.com/util/groupmember"
-	"tailscale.com/version/distro"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/preftype"
+	"github.com/qwenode/tailscale/util/groupmember"
+	"github.com/qwenode/tailscale/version/distro"
 )
 
 //go:embed web.html

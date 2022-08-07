@@ -16,12 +16,12 @@ import (
 
 	qt "github.com/frankban/quicktest"
 	"github.com/google/go-cmp/cmp"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/tstest"
-	"tailscale.com/types/persist"
-	"tailscale.com/types/preftype"
-	"tailscale.com/version/distro"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/persist"
+	"github.com/qwenode/tailscale/types/preftype"
+	"github.com/qwenode/tailscale/version/distro"
 )
 
 // geese is a collection of gooses. It need not be complete.

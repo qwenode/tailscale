@@ -10,9 +10,9 @@ import (
 	"os/exec"
 	"testing"
 
+	"github.com/qwenode/tailscale/util/lineread"
+	"github.com/qwenode/tailscale/version"
 	"go4.org/mem"
-	"tailscale.com/util/lineread"
-	"tailscale.com/version"
 )
 
 func TestLikelyHomeRouterIPSyscallExec(t *testing.T) {

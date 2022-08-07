@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"tailscale.com/util/lineread"
+	"github.com/qwenode/tailscale/util/lineread"
 )
 
 func ownerOfPID(pid int) (userID string, err error) {

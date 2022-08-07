@@ -13,16 +13,16 @@ import (
 
 	qt "github.com/frankban/quicktest"
 
-	"tailscale.com/control/controlclient"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/empty"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/types/persist"
-	"tailscale.com/wgengine"
+	"github.com/qwenode/tailscale/control/controlclient"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/empty"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/types/persist"
+	"github.com/qwenode/tailscale/wgengine"
 )
 
 // notifyThrottler receives notifications from an ipn.Backend, blocking

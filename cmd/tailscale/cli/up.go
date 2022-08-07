@@ -24,16 +24,16 @@ import (
 
 	shellquote "github.com/kballard/go-shellquote"
 	"github.com/peterbourgon/ff/v3/ffcli"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/preftype"
+	"github.com/qwenode/tailscale/version"
+	"github.com/qwenode/tailscale/version/distro"
 	qrcode "github.com/skip2/go-qrcode"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/safesocket"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/preftype"
-	"tailscale.com/version"
-	"tailscale.com/version/distro"
 )
 
 var upCmd = &ffcli.Command{
@@ -180,7 +180,7 @@ var upArgs upArgsT
 // Ex:
 //
 //	{
-//	   "AuthURL": "https://login.tailscale.com/a/0123456789abcdef",
+//	   "AuthURL": "https://login.github.com/qwenode/tailscale/a/0123456789abcdef",
 //	   "QR": "data:image/png;base64,0123...cdef"
 //	   "BackendState": "NeedsLogin"
 //	}
@@ -189,7 +189,7 @@ var upArgs upArgsT
 //	   "BackendState": "Running"
 //	}
 type upOutputJSON struct {
-	AuthURL      string `json:",omitempty"` // Authentication URL of the form https://login.tailscale.com/a/0123456789
+	AuthURL      string `json:",omitempty"` // Authentication URL of the form https://login.github.com/qwenode/tailscale/a/0123456789
 	QR           string `json:",omitempty"` // a DataURL (base64) PNG of a QR code AuthURL
 	BackendState string `json:",omitempty"` // name of state like Running or NeedsMachineAuth
 	Error        string `json:",omitempty"` // description of an error

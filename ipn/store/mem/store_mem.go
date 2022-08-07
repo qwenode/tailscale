@@ -9,8 +9,8 @@ import (
 	"encoding/json"
 	"sync"
 
-	"tailscale.com/ipn"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // New returns a new Store.

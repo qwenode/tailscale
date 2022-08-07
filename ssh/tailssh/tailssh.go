@@ -33,16 +33,16 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn/ipnlocal"
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tempfork/gliderlabs/ssh"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/clientmetric"
+	"github.com/qwenode/tailscale/util/mak"
 	gossh "github.com/tailscale/golang-x-crypto/ssh"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn/ipnlocal"
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tempfork/gliderlabs/ssh"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/clientmetric"
-	"tailscale.com/util/mak"
 )
 
 var (

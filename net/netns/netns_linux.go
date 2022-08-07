@@ -14,9 +14,9 @@ import (
 	"sync"
 	"syscall"
 
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.org/x/sys/unix"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/types/logger"
 )
 
 // tailscaleBypassMark is the mark indicating that packets originating

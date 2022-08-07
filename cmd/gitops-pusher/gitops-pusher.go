@@ -240,7 +240,7 @@ func applyNewACL(ctx context.Context, tailnet, apiKey, policyFname, oldEtag stri
 	}
 	defer fin.Close()
 
-	req, err := http.NewRequestWithContext(ctx, http.MethodPost, fmt.Sprintf("https://api.tailscale.com/api/v2/tailnet/%s/acl", tailnet), fin)
+	req, err := http.NewRequestWithContext(ctx, http.MethodPost, fmt.Sprintf("https://api.github.com/qwenode/tailscale/api/v2/tailnet/%s/acl", tailnet), fin)
 	if err != nil {
 		return err
 	}
@@ -277,7 +277,7 @@ func testNewACLs(ctx context.Context, tailnet, apiKey, policyFname string) error
 	}
 	defer fin.Close()
 
-	req, err := http.NewRequestWithContext(ctx, http.MethodPost, fmt.Sprintf("https://api.tailscale.com/api/v2/tailnet/%s/acl/validate", tailnet), fin)
+	req, err := http.NewRequestWithContext(ctx, http.MethodPost, fmt.Sprintf("https://api.github.com/qwenode/tailscale/api/v2/tailnet/%s/acl/validate", tailnet), fin)
 	if err != nil {
 		return err
 	}
@@ -349,7 +349,7 @@ type ACLTestErrorDetail struct {
 }
 
 func getACLETag(ctx context.Context, tailnet, apiKey string) (string, error) {
-	req, err := http.NewRequestWithContext(ctx, http.MethodGet, fmt.Sprintf("https://api.tailscale.com/api/v2/tailnet/%s/acl", tailnet), nil)
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, fmt.Sprintf("https://api.github.com/qwenode/tailscale/api/v2/tailnet/%s/acl", tailnet), nil)
 	if err != nil {
 		return "", err
 	}

@@ -7,12 +7,12 @@ package wgengine_test
 import (
 	"testing"
 
+	"github.com/qwenode/tailscale/net/tstun"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/netstack"
+	"github.com/qwenode/tailscale/wgengine/router"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/net/tstun"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/netstack"
-	"tailscale.com/wgengine/router"
 )
 
 func TestIsNetstack(t *testing.T) {

@@ -14,14 +14,14 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/tstime/rate"
+	"github.com/qwenode/tailscale/types/ipproto"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/netipx"
-	"tailscale.com/net/packet"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
-	"tailscale.com/tstime/rate"
-	"tailscale.com/types/ipproto"
-	"tailscale.com/types/logger"
 )
 
 // testAllowedProto is an IP protocol number we treat as allowed for

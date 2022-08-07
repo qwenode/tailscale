@@ -10,12 +10,12 @@ import (
 	"net/netip"
 	"sort"
 
-	"tailscale.com/envknob"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/wgengine/filter"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/wgengine/filter"
 )
 
 // mapSession holds the state over a long-polled "map" request to the

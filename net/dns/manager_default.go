@@ -7,7 +7,7 @@
 
 package dns
 
-import "tailscale.com/types/logger"
+import "github.com/qwenode/tailscale/types/logger"
 
 func NewOSConfigurator(logger.Logf, string) (OSConfigurator, error) {
 	// TODO(dmytro): on darwin, we should use a macOS-specific method such as scutil.

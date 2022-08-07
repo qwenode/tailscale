@@ -18,9 +18,9 @@ import (
 	"net/netip"
 	"syscall"
 
+	"github.com/qwenode/tailscale/net/netaddr"
 	"golang.org/x/net/route"
 	"golang.org/x/sys/unix"
-	"tailscale.com/net/netaddr"
 )
 
 func defaultRoute() (d DefaultRouteDetails, err error) {

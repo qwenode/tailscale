@@ -15,13 +15,13 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/opt"
+	"github.com/qwenode/tailscale/util/cloudenv"
+	"github.com/qwenode/tailscale/util/dnsname"
+	"github.com/qwenode/tailscale/util/lineread"
+	"github.com/qwenode/tailscale/version"
 	"go4.org/mem"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/opt"
-	"tailscale.com/util/cloudenv"
-	"tailscale.com/util/dnsname"
-	"tailscale.com/util/lineread"
-	"tailscale.com/version"
 )
 
 var started = time.Now()

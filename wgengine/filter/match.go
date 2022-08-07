@@ -9,11 +9,11 @@ import (
 	"net/netip"
 	"strings"
 
-	"tailscale.com/net/packet"
-	"tailscale.com/types/ipproto"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/types/ipproto"
 )
 
-//go:generate go run tailscale.com/cmd/cloner --type=Match
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner --type=Match
 
 // PortRange is a range of TCP and UDP ports.
 type PortRange struct {

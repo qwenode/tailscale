@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strconv"
 
-	"tailscale.com/syncs"
+	"github.com/qwenode/tailscale/syncs"
 )
 
 type Distro string

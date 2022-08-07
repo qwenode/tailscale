@@ -5,7 +5,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"tailscale.com/tempfork/gliderlabs/ssh"
+	"github.com/qwenode/tailscale/tempfork/gliderlabs/ssh"
 )
 
 func ExampleListenAndServe() {

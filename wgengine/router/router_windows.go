@@ -18,13 +18,13 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/net/dns"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"golang.org/x/sys/windows"
 	"golang.zx2c4.com/wireguard/tun"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/net/dns"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/monitor"
 )
 
 type winRouter struct {

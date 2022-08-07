@@ -15,9 +15,9 @@ import (
 	"time"
 
 	"github.com/godbus/dbus/v5"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/util/dnsname"
-	"tailscale.com/util/endian"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/util/dnsname"
+	"github.com/qwenode/tailscale/util/endian"
 )
 
 const (

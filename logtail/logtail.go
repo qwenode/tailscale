@@ -21,10 +21,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/net/interfaces"
-	tslogger "tailscale.com/types/logger"
-	"tailscale.com/wgengine/monitor"
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/net/interfaces"
+	tslogger "github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 )
 
 // DefaultHost is the default host name to upload logs to when

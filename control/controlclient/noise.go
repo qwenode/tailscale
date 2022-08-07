@@ -15,14 +15,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/control/controlbase"
+	"github.com/qwenode/tailscale/control/controlhttp"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/util/mak"
+	"github.com/qwenode/tailscale/util/multierr"
 	"golang.org/x/net/http2"
-	"tailscale.com/control/controlbase"
-	"tailscale.com/control/controlhttp"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/util/mak"
-	"tailscale.com/util/multierr"
 )
 
 // noiseConn is a wrapper around controlbase.Conn.

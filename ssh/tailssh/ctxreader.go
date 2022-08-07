@@ -9,7 +9,7 @@ import (
 	"io"
 	"sync"
 
-	"tailscale.com/tempfork/gliderlabs/ssh"
+	"github.com/qwenode/tailscale/tempfork/gliderlabs/ssh"
 )
 
 // readResult is a result from a io.Reader.Read call,

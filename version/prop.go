@@ -10,7 +10,7 @@ import (
 	"runtime"
 	"strings"
 
-	"tailscale.com/syncs"
+	"github.com/qwenode/tailscale/syncs"
 )
 
 // IsMobile reports whether this is a mobile client build.

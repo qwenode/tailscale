@@ -25,15 +25,15 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/client/tailscale/apitype"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnlocal"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/netutil"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/clientmetric"
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/client/tailscale/apitype"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnlocal"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/netutil"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/clientmetric"
+	"github.com/qwenode/tailscale/version"
 )
 
 func randHex(n int) string {

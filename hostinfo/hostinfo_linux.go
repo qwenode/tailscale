@@ -14,10 +14,10 @@ import (
 	"os"
 	"strings"
 
+	"github.com/qwenode/tailscale/util/lineread"
+	"github.com/qwenode/tailscale/util/strs"
+	"github.com/qwenode/tailscale/version/distro"
 	"golang.org/x/sys/unix"
-	"tailscale.com/util/lineread"
-	"tailscale.com/util/strs"
-	"tailscale.com/version/distro"
 )
 
 func init() {

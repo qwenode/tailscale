@@ -20,10 +20,10 @@ import (
 	"testing/iotest"
 	"time"
 
+	tsnettest "github.com/qwenode/tailscale/net/nettest"
+	"github.com/qwenode/tailscale/types/key"
 	chp "golang.org/x/crypto/chacha20poly1305"
 	"golang.org/x/net/nettest"
-	tsnettest "tailscale.com/net/nettest"
-	"tailscale.com/types/key"
 )
 
 const testProtocolVersion = 1

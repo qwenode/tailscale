@@ -12,10 +12,10 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"tailscale.com/net/dns/resolver"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/types/dnstype"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/net/dns/resolver"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 type fakeOSConfigurator struct {

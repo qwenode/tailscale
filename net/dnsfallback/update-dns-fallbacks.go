@@ -15,11 +15,11 @@ import (
 	"net/http"
 	"os"
 
-	"tailscale.com/tailcfg"
+	"github.com/qwenode/tailscale/tailcfg"
 )
 
 func main() {
-	res, err := http.Get("https://login.tailscale.com/derpmap/default")
+	res, err := http.Get("https://login.github.com/qwenode/tailscale/derpmap/default")
 	if err != nil {
 		log.Fatal(err)
 	}

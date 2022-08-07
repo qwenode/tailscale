@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/tstest"
 	"golang.org/x/net/icmp"
 	"golang.org/x/net/ipv4"
-	"tailscale.com/tstest"
 )
 
 var (

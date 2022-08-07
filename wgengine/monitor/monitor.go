@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/net/interfaces"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // pollWallTimeInterval is how often we check the time to check

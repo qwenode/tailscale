@@ -8,7 +8,7 @@ import (
 	"math"
 	"testing"
 
-	"tailscale.com/tailcfg"
+	"github.com/qwenode/tailscale/tailcfg"
 )
 
 // maxAllowedNoiseVersion is the highest we expect the Tailscale

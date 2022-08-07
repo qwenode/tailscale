@@ -14,8 +14,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/tstest"
 	"golang.org/x/net/dns/dnsmessage"
-	"tailscale.com/tstest"
 )
 
 func TestMessageCache(t *testing.T) {

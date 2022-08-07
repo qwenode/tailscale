@@ -10,10 +10,10 @@ import (
 	"net/netip"
 	"reflect"
 
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/preftype"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/preftype"
-	"tailscale.com/wgengine/monitor"
 )
 
 // Router is responsible for managing the system network stack.

@@ -12,14 +12,14 @@ import (
 	"net/netip"
 	"time"
 
-	"tailscale.com/types/dnstype"
-	"tailscale.com/types/key"
-	"tailscale.com/types/opt"
-	"tailscale.com/types/structs"
-	"tailscale.com/types/views"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/opt"
+	"github.com/qwenode/tailscale/types/structs"
+	"github.com/qwenode/tailscale/types/views"
 )
 
-//go:generate go run tailscale.com/cmd/cloner  -clonefunc=true -type=User,Node,Hostinfo,NetInfo,Login,DNSConfig,RegisterResponse,DERPRegion,DERPMap,DERPNode,SSHRule,SSHPrincipal
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner  -clonefunc=true -type=User,Node,Hostinfo,NetInfo,Login,DNSConfig,RegisterResponse,DERPRegion,DERPMap,DERPNode,SSHRule,SSHPrincipal
 
 // View returns a readonly view of User.
 func (p *User) View() UserView {

@@ -15,9 +15,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/envknob"
-	"tailscale.com/types/logger"
 )
 
 var tunMTU = DefaultMTU

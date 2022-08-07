@@ -16,14 +16,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/persist"
+	"github.com/qwenode/tailscale/types/preftype"
 	"go4.org/mem"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
-	"tailscale.com/types/key"
-	"tailscale.com/types/persist"
-	"tailscale.com/types/preftype"
 )
 
 func fieldsOf(t reflect.Type) (fields []string) {

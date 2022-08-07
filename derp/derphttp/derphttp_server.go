@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strings"
 
-	"tailscale.com/derp"
+	"github.com/qwenode/tailscale/derp"
 )
 
 // fastStartHeader is the header (with value "1") that signals to the HTTP

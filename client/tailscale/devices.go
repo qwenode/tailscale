@@ -16,7 +16,7 @@ import (
 	"net/url"
 	"strings"
 
-	"tailscale.com/types/opt"
+	"github.com/qwenode/tailscale/types/opt"
 )
 
 type GetDevicesResponse struct {

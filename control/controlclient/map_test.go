@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/netmap"
 	"go4.org/mem"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/netmap"
 )
 
 func TestUndeltaPeers(t *testing.T) {
@@ -202,10 +202,10 @@ func TestUndeltaPeers(t *testing.T) {
 					Key:    ptrTo(key.NodePublicFromRaw32(mem.B(append(make([]byte, 31), 'A')))),
 				}},
 			}, want: peers(&tailcfg.Node{
-				ID:   1,
-				Name: "foo",
-				Key:  key.NodePublicFromRaw32(mem.B(append(make([]byte, 31), 'A'))),
-			}),
+			ID:   1,
+			Name: "foo",
+			Key:  key.NodePublicFromRaw32(mem.B(append(make([]byte, 31), 'A'))),
+		}),
 		},
 		{
 			name: "change_disco_key",
@@ -216,10 +216,10 @@ func TestUndeltaPeers(t *testing.T) {
 					DiscoKey: ptrTo(key.DiscoPublicFromRaw32(mem.B(append(make([]byte, 31), 'A')))),
 				}},
 			}, want: peers(&tailcfg.Node{
-				ID:       1,
-				Name:     "foo",
-				DiscoKey: key.DiscoPublicFromRaw32(mem.B(append(make([]byte, 31), 'A'))),
-			}),
+			ID:       1,
+			Name:     "foo",
+			DiscoKey: key.DiscoPublicFromRaw32(mem.B(append(make([]byte, 31), 'A'))),
+		}),
 		},
 		{
 			name: "change_online",
@@ -230,10 +230,10 @@ func TestUndeltaPeers(t *testing.T) {
 					Online: ptrTo(true),
 				}},
 			}, want: peers(&tailcfg.Node{
-				ID:     1,
-				Name:   "foo",
-				Online: ptrTo(true),
-			}),
+			ID:     1,
+			Name:   "foo",
+			Online: ptrTo(true),
+		}),
 		},
 		{
 			name: "change_last_seen",
@@ -244,10 +244,10 @@ func TestUndeltaPeers(t *testing.T) {
 					LastSeen: ptrTo(time.Unix(123, 0).UTC()),
 				}},
 			}, want: peers(&tailcfg.Node{
-				ID:       1,
-				Name:     "foo",
-				LastSeen: ptrTo(time.Unix(123, 0).UTC()),
-			}),
+			ID:       1,
+			Name:     "foo",
+			LastSeen: ptrTo(time.Unix(123, 0).UTC()),
+		}),
 		},
 		{
 			name: "change_key_expiry",
@@ -258,10 +258,10 @@ func TestUndeltaPeers(t *testing.T) {
 					KeyExpiry: ptrTo(time.Unix(123, 0).UTC()),
 				}},
 			}, want: peers(&tailcfg.Node{
-				ID:        1,
-				Name:      "foo",
-				KeyExpiry: time.Unix(123, 0).UTC(),
-			}),
+			ID:        1,
+			Name:      "foo",
+			KeyExpiry: time.Unix(123, 0).UTC(),
+		}),
 		},
 		{
 			name: "change_capabilities",
@@ -272,10 +272,10 @@ func TestUndeltaPeers(t *testing.T) {
 					Capabilities: ptrTo([]string{"foo"}),
 				}},
 			}, want: peers(&tailcfg.Node{
-				ID:           1,
-				Name:         "foo",
-				Capabilities: []string{"foo"},
-			}),
+			ID:           1,
+			Name:         "foo",
+			Capabilities: []string{"foo"},
+		}),
 		}}
 
 	for _, tt := range tests {

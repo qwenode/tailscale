@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.zx2c4.com/wireguard/tun"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/types/logger"
 )
 
 // ifaceWatcher waits for an interface to be up.

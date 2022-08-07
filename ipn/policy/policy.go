@@ -7,7 +7,7 @@
 package policy
 
 import (
-	"tailscale.com/tailcfg"
+	"github.com/qwenode/tailscale/tailcfg"
 )
 
 // IsInterestingService reports whether service s on the given operating

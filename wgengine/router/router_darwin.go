@@ -5,9 +5,9 @@
 package router
 
 import (
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/monitor"
 )
 
 func newUserspaceRouter(logf logger.Logf, tundev tun.Device, linkMon *monitor.Mon) (Router, error) {

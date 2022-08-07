@@ -10,10 +10,10 @@ import (
 	"net/netip"
 	"sort"
 
-	"tailscale.com/net/dns/resolver"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/types/dnstype"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/net/dns/resolver"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 // Config is a DNS configuration.

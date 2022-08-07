@@ -14,9 +14,9 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/winutil"
 	"golang.org/x/sys/windows"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/winutil"
 )
 
 // wslDistros reports the names of the installed WSL2 linux distributions.

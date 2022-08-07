@@ -16,9 +16,9 @@ import (
 	"strings"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/atomicfile"
-	"tailscale.com/ipn"
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/atomicfile"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/version"
 )
 
 var certCmd = &ffcli.Command{

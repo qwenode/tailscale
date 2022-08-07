@@ -18,14 +18,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/neterror"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/nettype"
+	"github.com/qwenode/tailscale/util/clientmetric"
 	"go4.org/mem"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/neterror"
-	"tailscale.com/net/netns"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/nettype"
-	"tailscale.com/util/clientmetric"
 )
 
 // Debug knobs for "tailscaled debug --portmap".
@@ -587,7 +587,7 @@ func (c *Client) createOrGetMapping(ctx context.Context) (external netip.AddrPor
 	}
 }
 
-//go:generate go run tailscale.com/cmd/addlicense -year 2021 -file pmpresultcode_string.go go run golang.org/x/tools/cmd/stringer -type=pmpResultCode -trimprefix=pmpCode
+//go:generate go run github.com/qwenode/tailscale/cmd/addlicense -year 2021 -file pmpresultcode_string.go go run golang.org/x/tools/cmd/stringer -type=pmpResultCode -trimprefix=pmpCode
 
 type pmpResultCode uint16
 

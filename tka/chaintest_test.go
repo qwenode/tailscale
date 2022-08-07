@@ -15,7 +15,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/google/go-cmp/cmp/cmpopts"
-	"tailscale.com/types/tkatype"
+	"github.com/qwenode/tailscale/types/tkatype"
 )
 
 // chaintest_test.go implements test helpers for concisely describing

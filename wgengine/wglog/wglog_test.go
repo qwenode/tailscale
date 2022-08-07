@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
+	"github.com/qwenode/tailscale/wgengine/wglog"
 	"go4.org/mem"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/wgcfg"
-	"tailscale.com/wgengine/wglog"
 )
 
 func TestLogger(t *testing.T) {

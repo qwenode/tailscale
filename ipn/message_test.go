@@ -11,8 +11,8 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 func TestReadWrite(t *testing.T) {

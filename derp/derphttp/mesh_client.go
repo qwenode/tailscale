@@ -9,9 +9,9 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/derp"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // RunWatchConnectionLoop loops until ctx is done, sending WatchConnectionChanges and subscribing to

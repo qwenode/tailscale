@@ -29,17 +29,17 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/net/dnscache"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/net/tlsdial"
+	"github.com/qwenode/tailscale/net/tshttpproxy"
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/mem"
-	"tailscale.com/derp"
-	"tailscale.com/envknob"
-	"tailscale.com/net/dnscache"
-	"tailscale.com/net/netns"
-	"tailscale.com/net/tlsdial"
-	"tailscale.com/net/tshttpproxy"
-	"tailscale.com/syncs"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
 )
 
 // Client is a DERP-over-HTTP client.

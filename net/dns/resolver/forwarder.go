@@ -24,20 +24,20 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/net/dns/publicdns"
+	"github.com/qwenode/tailscale/net/dnscache"
+	"github.com/qwenode/tailscale/net/neterror"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/nettype"
+	"github.com/qwenode/tailscale/util/cloudenv"
+	"github.com/qwenode/tailscale/util/dnsname"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	dns "golang.org/x/net/dns/dnsmessage"
-	"tailscale.com/envknob"
-	"tailscale.com/hostinfo"
-	"tailscale.com/net/dns/publicdns"
-	"tailscale.com/net/dnscache"
-	"tailscale.com/net/neterror"
-	"tailscale.com/net/netns"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/types/dnstype"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/nettype"
-	"tailscale.com/util/cloudenv"
-	"tailscale.com/util/dnsname"
-	"tailscale.com/wgengine/monitor"
 )
 
 // headerBytes is the number of bytes in a DNS message header.
@@ -221,7 +221,7 @@ func maxDoHInFlight(goos string) int {
 	}
 	// iOS <  15 limits the memory to 15MB for NetworkExtensions.
 	// iOS >= 15 gives us 50MB.
-	// See: https://tailscale.com/blog/go-linker/
+	// See: https://github.com/qwenode/tailscale/blog/go-linker/
 	ver := hostinfo.GetOSVersion()
 	if ver == "" {
 		// Unknown iOS version, be cautious.

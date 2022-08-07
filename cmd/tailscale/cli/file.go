@@ -23,13 +23,13 @@ import (
 	"unicode/utf8"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
+	"github.com/qwenode/tailscale/client/tailscale/apitype"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/version"
 	"golang.org/x/time/rate"
-	"tailscale.com/client/tailscale/apitype"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/version"
 )
 
 var fileCmd = &ffcli.Command{

@@ -8,10 +8,10 @@ package wgcfg
 import (
 	"net/netip"
 
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/types/key"
 )
 
-//go:generate go run tailscale.com/cmd/cloner -type=Config,Peer
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner -type=Config,Peer
 
 // Config is a WireGuard configuration.
 // It only supports the set of things Tailscale uses.

@@ -9,10 +9,10 @@ import (
 	"net/netip"
 	"strings"
 
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/ipproto"
 	"go4.org/netipx"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/ipproto"
 )
 
 var defaultProtos = []ipproto.Proto{

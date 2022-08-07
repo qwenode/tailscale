@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/coreos/go-systemd/activation"
-	"tailscale.com/client/tailscale"
+	"github.com/qwenode/tailscale/client/tailscale"
 )
 
 var (

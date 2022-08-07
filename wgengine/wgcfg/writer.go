@@ -10,8 +10,8 @@ import (
 	"net/netip"
 	"strconv"
 
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 // ToUAPI writes cfg in UAPI format to w.

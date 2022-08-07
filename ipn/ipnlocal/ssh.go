@@ -24,9 +24,9 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/util/mak"
 	"github.com/tailscale/golang-x-crypto/ssh"
-	"tailscale.com/envknob"
-	"tailscale.com/util/mak"
 )
 
 var useHostKeys = envknob.Bool("TS_USE_SYSTEM_SSH_HOST_KEYS")

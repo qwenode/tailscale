@@ -16,11 +16,11 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"github.com/vishvananda/netlink"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/tstest"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/monitor"
 )
 
 func TestRouterStates(t *testing.T) {

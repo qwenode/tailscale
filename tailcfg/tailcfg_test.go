@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/tstest"
-	"tailscale.com/types/key"
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/version"
 )
 
 func fieldsOf(t reflect.Type) (fields []string) {

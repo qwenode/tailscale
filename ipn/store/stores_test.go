@@ -8,10 +8,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/tstest"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func TestNewStore(t *testing.T) {

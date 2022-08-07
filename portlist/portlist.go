@@ -9,7 +9,7 @@ import (
 	"sort"
 	"strings"
 
-	"tailscale.com/envknob"
+	"github.com/qwenode/tailscale/envknob"
 )
 
 // Port is a listening port on the machine.

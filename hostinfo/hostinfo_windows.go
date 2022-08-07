@@ -9,10 +9,10 @@ import (
 	"os"
 	"path/filepath"
 
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/util/winutil"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/registry"
-	"tailscale.com/syncs"
-	"tailscale.com/util/winutil"
 )
 
 func init() {

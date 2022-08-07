@@ -17,8 +17,8 @@ import (
 	"time"
 
 	"github.com/google/go-cmp/cmp"
-	"tailscale.com/tstest"
-	"tailscale.com/tsweb"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/tsweb"
 )
 
 const (

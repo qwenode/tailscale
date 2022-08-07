@@ -13,7 +13,7 @@ import (
 	"runtime"
 	"testing"
 
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 func noError(t *testing.T, err error) bool {

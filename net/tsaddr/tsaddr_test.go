@@ -8,7 +8,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"tailscale.com/net/netaddr"
+	"github.com/qwenode/tailscale/net/netaddr"
 )
 
 func TestInCrostiniRange(t *testing.T) {

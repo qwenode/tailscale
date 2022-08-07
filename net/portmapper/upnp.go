@@ -21,11 +21,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/qwenode/tailscale/control/controlknobs"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/types/logger"
 	"github.com/tailscale/goupnp"
 	"github.com/tailscale/goupnp/dcps/internetgateway2"
-	"tailscale.com/control/controlknobs"
-	"tailscale.com/net/netns"
-	"tailscale.com/types/logger"
 )
 
 // References:
@@ -59,33 +59,33 @@ type upnpClient interface {
 	AddPortMapping(
 		ctx context.Context,
 
-		// remoteHost is the remote device sending packets to this device, in the format of x.x.x.x.
-		// The empty string, "", means any host out on the internet can send packets in.
+	// remoteHost is the remote device sending packets to this device, in the format of x.x.x.x.
+	// The empty string, "", means any host out on the internet can send packets in.
 		remoteHost string,
 
-		// externalPort is the exposed port of this port mapping. Visible during NAT operations.
-		// 0 will let the router select the port, but there is an additional call,
-		// `AddAnyPortMapping`, which is available on 1 of the 3 possible protocols,
-		// which should be used if available. See `addAnyPortMapping` below, which calls this if
-		// `AddAnyPortMapping` is not supported.
+	// externalPort is the exposed port of this port mapping. Visible during NAT operations.
+	// 0 will let the router select the port, but there is an additional call,
+	// `AddAnyPortMapping`, which is available on 1 of the 3 possible protocols,
+	// which should be used if available. See `addAnyPortMapping` below, which calls this if
+	// `AddAnyPortMapping` is not supported.
 		externalPort uint16,
 
-		// protocol is whether this is over TCP or UDP. Either "tcp" or "udp".
+	// protocol is whether this is over TCP or UDP. Either "tcp" or "udp".
 		protocol string,
 
-		// internalPort is the port that the gateway device forwards the traffic to.
+	// internalPort is the port that the gateway device forwards the traffic to.
 		internalPort uint16,
-		// internalClient is the IP address that packets will be forwarded to for this mapping.
-		// Internal client is of the form "x.x.x.x".
+	// internalClient is the IP address that packets will be forwarded to for this mapping.
+	// Internal client is of the form "x.x.x.x".
 		internalClient string,
 
-		// enabled is whether this portmapping should be enabled or disabled.
+	// enabled is whether this portmapping should be enabled or disabled.
 		enabled bool,
-		// portMappingDescription is a user-readable description of this portmapping.
+	// portMappingDescription is a user-readable description of this portmapping.
 		portMappingDescription string,
-		// leaseDurationSec is the duration of this portmapping. The value of this argument must be
-		// greater than 0. From the spec, it appears if it is set to 0, it will switch to using
-		// 604800 seconds, but not sure why this is desired. The recommended time is 3600 seconds.
+	// leaseDurationSec is the duration of this portmapping. The value of this argument must be
+	// greater than 0. From the spec, it appears if it is set to 0, it will switch to using
+	// 604800 seconds, but not sure why this is desired. The recommended time is 3600 seconds.
 		leaseDurationSec uint32,
 	) error
 

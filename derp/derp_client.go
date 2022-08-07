@@ -15,11 +15,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/mem"
 	"golang.org/x/time/rate"
-	"tailscale.com/syncs"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
 )
 
 // Client is a DERP client.

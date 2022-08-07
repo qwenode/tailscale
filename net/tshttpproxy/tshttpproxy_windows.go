@@ -19,11 +19,11 @@ import (
 	"unsafe"
 
 	"github.com/alexbrainman/sspi/negotiate"
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/cmpver"
 	"golang.org/x/sys/windows"
-	"tailscale.com/hostinfo"
-	"tailscale.com/syncs"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/cmpver"
 )
 
 func init() {

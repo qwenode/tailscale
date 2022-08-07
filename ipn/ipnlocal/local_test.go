@@ -13,16 +13,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
 	"go4.org/netipx"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/wgcfg"
 )
 
 func TestNetworkMapCompare(t *testing.T) {

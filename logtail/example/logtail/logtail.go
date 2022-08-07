@@ -12,7 +12,7 @@ import (
 	"log"
 	"os"
 
-	"tailscale.com/logtail"
+	"github.com/qwenode/tailscale/logtail"
 )
 
 func main() {

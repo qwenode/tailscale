@@ -10,8 +10,8 @@ package tstun
 import (
 	"time"
 
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/types/logger"
 )
 
 // Dummy implementation that does nothing.

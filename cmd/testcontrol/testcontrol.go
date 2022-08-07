@@ -11,9 +11,9 @@ import (
 	"net/http"
 	"testing"
 
-	"tailscale.com/tstest/integration"
-	"tailscale.com/tstest/integration/testcontrol"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/tstest/integration"
+	"github.com/qwenode/tailscale/tstest/integration/testcontrol"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 var (

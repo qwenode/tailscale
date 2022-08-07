@@ -34,13 +34,13 @@ import (
 	"net/url"
 	"time"
 
-	"tailscale.com/control/controlbase"
-	"tailscale.com/net/dnscache"
-	"tailscale.com/net/dnsfallback"
-	"tailscale.com/net/netutil"
-	"tailscale.com/net/tlsdial"
-	"tailscale.com/net/tshttpproxy"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/control/controlbase"
+	"github.com/qwenode/tailscale/net/dnscache"
+	"github.com/qwenode/tailscale/net/dnsfallback"
+	"github.com/qwenode/tailscale/net/netutil"
+	"github.com/qwenode/tailscale/net/tlsdial"
+	"github.com/qwenode/tailscale/net/tshttpproxy"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 // Dial connects to the HTTP server at addr, requests to switch to the

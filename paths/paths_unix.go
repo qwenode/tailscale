@@ -13,8 +13,8 @@ import (
 	"path/filepath"
 	"runtime"
 
+	"github.com/qwenode/tailscale/version/distro"
 	"golang.org/x/sys/unix"
-	"tailscale.com/version/distro"
 )
 
 func init() {

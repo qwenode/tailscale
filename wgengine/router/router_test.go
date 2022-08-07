@@ -9,7 +9,7 @@ import (
 	"reflect"
 	"testing"
 
-	"tailscale.com/types/preftype"
+	"github.com/qwenode/tailscale/types/preftype"
 )
 
 func mustCIDRs(ss ...string) []netip.Prefix {

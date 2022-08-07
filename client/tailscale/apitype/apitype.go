@@ -5,7 +5,7 @@
 // Package apitype contains types for the Tailscale local API and control plane API.
 package apitype
 
-import "tailscale.com/tailcfg"
+import "github.com/qwenode/tailscale/tailcfg"
 
 // WhoIsResponse is the JSON type returned by tailscaled debug server's /whois?ip=$IP handler.
 type WhoIsResponse struct {

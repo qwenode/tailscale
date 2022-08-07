@@ -18,7 +18,7 @@ import (
 	"strconv"
 	"time"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 const PayloadSize = 1000

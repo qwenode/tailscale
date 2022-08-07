@@ -9,7 +9,7 @@ import (
 	"context"
 	"net"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func (s *Server) handleProxyConnectConn(ctx context.Context, br *bufio.Reader, c net.Conn, logf logger.Logf) {

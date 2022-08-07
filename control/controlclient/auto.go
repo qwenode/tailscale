@@ -12,15 +12,15 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/health"
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/empty"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/types/persist"
-	"tailscale.com/types/structs"
+	"github.com/qwenode/tailscale/health"
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/empty"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/types/persist"
+	"github.com/qwenode/tailscale/types/structs"
 )
 
 type LoginGoal struct {

@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // The derpprobe binary probes derpers.
-package main // import "tailscale.com/cmd/derper/derpprobe"
+package main // import "github.com/qwenode/tailscale/cmd/derper/derpprobe"
 
 import (
 	"bytes"
@@ -25,15 +25,15 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/derp"
-	"tailscale.com/derp/derphttp"
-	"tailscale.com/net/stun"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/derp/derphttp"
+	"github.com/qwenode/tailscale/net/stun"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 var (
-	derpMapURL = flag.String("derp-map", "https://login.tailscale.com/derpmap/default", "URL to DERP map (https:// or file://)")
+	derpMapURL = flag.String("derp-map", "https://login.github.com/qwenode/tailscale/derpmap/default", "URL to DERP map (https:// or file://)")
 	listen     = flag.String("listen", ":8030", "HTTP listen address")
 )
 

@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
-	"tailscale.com/types/netmap"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 // dnsMap maps MagicDNS names (both base + FQDN) to their first IP.

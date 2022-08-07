@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/util/cibuild"
+	"github.com/qwenode/tailscale/util/cibuild"
 )
 
 // Time-based tests are fundamentally flaky.

@@ -16,7 +16,7 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/syncs"
+	"github.com/qwenode/tailscale/syncs"
 )
 
 // CommonNonRoutableMetadataIP is the IP address of the metadata server

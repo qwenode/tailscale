@@ -5,7 +5,7 @@
 //go:build go1.19
 // +build go1.19
 
-package main // import "tailscale.com/cmd/tailscaled"
+package main // import "github.com/qwenode/tailscale/cmd/tailscaled"
 
 // TODO: check if administrator, like tswin does.
 //
@@ -29,26 +29,26 @@ import (
 	"os"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn/ipnserver"
+	"github.com/qwenode/tailscale/ipn/store"
+	"github.com/qwenode/tailscale/logpolicy"
+	"github.com/qwenode/tailscale/net/dns"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/net/tstun"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/winutil"
+	"github.com/qwenode/tailscale/version"
+	"github.com/qwenode/tailscale/wf"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/monitor"
+	"github.com/qwenode/tailscale/wgengine/netstack"
+	"github.com/qwenode/tailscale/wgengine/router"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/svc"
 	"golang.org/x/sys/windows/svc/eventlog"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn/ipnserver"
-	"tailscale.com/ipn/store"
-	"tailscale.com/logpolicy"
-	"tailscale.com/net/dns"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/net/tstun"
-	"tailscale.com/safesocket"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/winutil"
-	"tailscale.com/version"
-	"tailscale.com/wf"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/monitor"
-	"tailscale.com/wgengine/netstack"
-	"tailscale.com/wgengine/router"
 )
 
 const serviceName = "Tailscale"

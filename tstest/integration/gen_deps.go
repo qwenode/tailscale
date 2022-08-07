@@ -28,7 +28,7 @@ func generate(goos string) {
 	var x struct {
 		Imports []string
 	}
-	cmd := exec.Command("go", "list", "-json", "tailscale.com/cmd/tailscaled")
+	cmd := exec.Command("go", "list", "-json", "github.com/qwenode/tailscale/cmd/tailscaled")
 	cmd.Env = append(os.Environ(), "GOOS="+goos, "GOARCH=amd64")
 	j, err := cmd.Output()
 	if err != nil {

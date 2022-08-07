@@ -21,10 +21,10 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/net/dns/resolvconffile"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/dnsname"
-	"tailscale.com/version/distro"
+	"github.com/qwenode/tailscale/net/dns/resolvconffile"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/dnsname"
+	"github.com/qwenode/tailscale/version/distro"
 )
 
 const (

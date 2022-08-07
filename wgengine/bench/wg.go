@@ -15,15 +15,15 @@ import (
 
 	"golang.zx2c4.com/wireguard/tun"
 
-	"tailscale.com/net/dns"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/filter"
-	"tailscale.com/wgengine/router"
-	"tailscale.com/wgengine/wgcfg"
+	"github.com/qwenode/tailscale/net/dns"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/filter"
+	"github.com/qwenode/tailscale/wgengine/router"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
 )
 
 func setupWGTest(b *testing.B, logf logger.Logf, traf *TrafficGen, a1, a2 netip.Prefix) {

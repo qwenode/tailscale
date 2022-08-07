@@ -22,25 +22,25 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/client/tailscale"
-	"tailscale.com/control/controlclient"
-	"tailscale.com/envknob"
-	"tailscale.com/hostinfo"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnlocal"
-	"tailscale.com/ipn/localapi"
-	"tailscale.com/ipn/store"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/logpolicy"
-	"tailscale.com/logtail"
-	"tailscale.com/logtail/filch"
-	"tailscale.com/net/nettest"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/smallzstd"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/monitor"
-	"tailscale.com/wgengine/netstack"
+	"github.com/qwenode/tailscale/client/tailscale"
+	"github.com/qwenode/tailscale/control/controlclient"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnlocal"
+	"github.com/qwenode/tailscale/ipn/localapi"
+	"github.com/qwenode/tailscale/ipn/store"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/logpolicy"
+	"github.com/qwenode/tailscale/logtail"
+	"github.com/qwenode/tailscale/logtail/filch"
+	"github.com/qwenode/tailscale/net/nettest"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/smallzstd"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/monitor"
+	"github.com/qwenode/tailscale/wgengine/netstack"
 )
 
 // Server is an embedded Tailscale server.
@@ -56,7 +56,7 @@ type Server struct {
 	// Store specifies the state store to use.
 	//
 	// If nil, a new FileStore is initialized at `Dir/tailscaled.state`.
-	// See tailscale.com/ipn/store for supported stores.
+	// See github.com/qwenode/tailscale/ipn/store for supported stores.
 	//
 	// Logs will automatically be uploaded to uploaded to log.tailscale.io,
 	// where the configuration file for logging will be saved at
@@ -72,7 +72,7 @@ type Server struct {
 	Logf logger.Logf
 
 	// Ephemeral, if true, specifies that the instance should register
-	// as an Ephemeral node (https://tailscale.com/kb/1111/ephemeral-nodes/).
+	// as an Ephemeral node (https://github.com/qwenode/tailscale/kb/1111/ephemeral-nodes/).
 	Ephemeral bool
 
 	// AuthKey, if non-empty, is the auth key to create the node

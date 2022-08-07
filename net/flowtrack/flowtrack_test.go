@@ -8,7 +8,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 func TestCache(t *testing.T) {

@@ -12,8 +12,8 @@ import (
 
 	"github.com/fxamacker/cbor/v2"
 	"github.com/hdevalence/ed25519consensus"
+	"github.com/qwenode/tailscale/types/tkatype"
 	"golang.org/x/crypto/blake2s"
-	"tailscale.com/types/tkatype"
 )
 
 // SigKind describes valid NodeKeySignature types.

@@ -27,12 +27,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/metrics"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/version"
 	"go4.org/mem"
-	"tailscale.com/envknob"
-	"tailscale.com/metrics"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/types/logger"
-	"tailscale.com/version"
 )
 
 func init() {

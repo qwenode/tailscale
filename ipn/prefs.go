@@ -18,17 +18,17 @@ import (
 	"runtime"
 	"strings"
 
-	"tailscale.com/atomicfile"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/persist"
-	"tailscale.com/types/preftype"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/atomicfile"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/persist"
+	"github.com/qwenode/tailscale/types/preftype"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
-//go:generate go run tailscale.com/cmd/cloner -type=Prefs
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner -type=Prefs
 
 // DefaultControlURL is the URL base of the control plane
 // ("coordination server") for use when no explicit one is configured.

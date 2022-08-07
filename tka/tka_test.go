@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"tailscale.com/types/tkatype"
+	"github.com/qwenode/tailscale/types/tkatype"
 )
 
 func TestComputeChainCandidates(t *testing.T) {

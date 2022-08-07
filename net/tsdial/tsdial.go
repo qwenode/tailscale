@@ -18,14 +18,14 @@ import (
 	"syscall"
 	"time"
 
-	"tailscale.com/net/dnscache"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/netknob"
-	"tailscale.com/net/netns"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/util/mak"
-	"tailscale.com/wgengine/monitor"
+	"github.com/qwenode/tailscale/net/dnscache"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/netknob"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/util/mak"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 )
 
 // Dialer dials out of tailscaled, while taking care of details while

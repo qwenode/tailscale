@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/qwenode/tailscale/control/controlbase"
+	"github.com/qwenode/tailscale/net/netutil"
+	"github.com/qwenode/tailscale/types/key"
 	"nhooyr.io/websocket"
-	"tailscale.com/control/controlbase"
-	"tailscale.com/net/netutil"
-	"tailscale.com/types/key"
 )
 
 // AcceptHTTP upgrades the HTTP request given by w and r into a

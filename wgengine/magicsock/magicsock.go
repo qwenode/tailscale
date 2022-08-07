@@ -27,37 +27,37 @@ import (
 	"sync/atomic"
 	"time"
 
+	"github.com/qwenode/tailscale/control/controlclient"
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/derp/derphttp"
+	"github.com/qwenode/tailscale/disco"
+	"github.com/qwenode/tailscale/health"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/logtail/backoff"
+	"github.com/qwenode/tailscale/net/dnscache"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/netcheck"
+	"github.com/qwenode/tailscale/net/neterror"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/net/portmapper"
+	"github.com/qwenode/tailscale/net/stun"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstime"
+	"github.com/qwenode/tailscale/tstime/mono"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/types/nettype"
+	"github.com/qwenode/tailscale/util/clientmetric"
+	"github.com/qwenode/tailscale/util/mak"
+	"github.com/qwenode/tailscale/util/uniq"
+	"github.com/qwenode/tailscale/version"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"go4.org/mem"
 	"golang.zx2c4.com/wireguard/conn"
-	"tailscale.com/control/controlclient"
-	"tailscale.com/derp"
-	"tailscale.com/derp/derphttp"
-	"tailscale.com/disco"
-	"tailscale.com/health"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/logtail/backoff"
-	"tailscale.com/net/dnscache"
-	"tailscale.com/net/interfaces"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/netcheck"
-	"tailscale.com/net/neterror"
-	"tailscale.com/net/netns"
-	"tailscale.com/net/portmapper"
-	"tailscale.com/net/stun"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/syncs"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstime"
-	"tailscale.com/tstime/mono"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/netmap"
-	"tailscale.com/types/nettype"
-	"tailscale.com/util/clientmetric"
-	"tailscale.com/util/mak"
-	"tailscale.com/util/uniq"
-	"tailscale.com/version"
-	"tailscale.com/wgengine/monitor"
 )
 
 // useDerpRoute reports whether magicsock should enable the DERP
@@ -1837,7 +1837,7 @@ func (c *Conn) sendDiscoMessage(dst netip.AddrPort, dstKey key.NodePublic, dstDi
 //   - magic             [6]byte
 //   - senderDiscoPubKey [32]byte
 //   - nonce             [24]byte
-//   - naclbox of payload (see tailscale.com/disco package for inner payload format)
+//   - naclbox of payload (see github.com/qwenode/tailscale/disco package for inner payload format)
 //
 // For messages received over DERP, the src.Addr() will be derpMagicIP (with
 // src.Port() being the region ID) and the derpNodeSrc will be the node key
@@ -3654,7 +3654,7 @@ func (de *endpoint) sendDiscoPing(ep netip.AddrPort, discoKey key.DiscoPublic, t
 // discoPingPurpose is the reason why a discovery ping message was sent.
 type discoPingPurpose int
 
-//go:generate go run tailscale.com/cmd/addlicense -year 2020 -file discopingpurpose_string.go go run golang.org/x/tools/cmd/stringer -type=discoPingPurpose -trimprefix=ping
+//go:generate go run github.com/qwenode/tailscale/cmd/addlicense -year 2020 -file discopingpurpose_string.go go run golang.org/x/tools/cmd/stringer -type=discoPingPurpose -trimprefix=ping
 const (
 	// pingDiscovery means that purpose of a ping was to see if a
 	// path was valid.

@@ -30,16 +30,16 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/ipn/store"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/syncs"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/tstest/integration/testcontrol"
+	"github.com/qwenode/tailscale/types/logger"
 	"go4.org/mem"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/ipn/store"
-	"tailscale.com/safesocket"
-	"tailscale.com/syncs"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
-	"tailscale.com/tstest/integration/testcontrol"
-	"tailscale.com/types/logger"
 )
 
 var (

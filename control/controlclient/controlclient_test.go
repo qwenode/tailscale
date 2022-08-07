@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"tailscale.com/types/empty"
+	"github.com/qwenode/tailscale/types/empty"
 )
 
 func fieldsOf(t reflect.Type) (fields []string) {

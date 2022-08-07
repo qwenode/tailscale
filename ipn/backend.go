@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/empty"
-	"tailscale.com/types/key"
-	"tailscale.com/types/netmap"
-	"tailscale.com/types/structs"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/empty"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/types/structs"
 )
 
 type State int

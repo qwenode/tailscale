@@ -24,12 +24,12 @@ import (
 	"text/tabwriter"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/client/tailscale"
-	"tailscale.com/envknob"
-	"tailscale.com/ipn"
-	"tailscale.com/paths"
-	"tailscale.com/safesocket"
-	"tailscale.com/version/distro"
+	"github.com/qwenode/tailscale/client/tailscale"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/paths"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/version/distro"
 )
 
 var Stderr io.Writer = os.Stderr

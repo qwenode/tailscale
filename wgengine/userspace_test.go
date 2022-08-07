@@ -10,17 +10,17 @@ import (
 	"reflect"
 	"testing"
 
+	"github.com/qwenode/tailscale/net/dns"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/tstun"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/tstime/mono"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/wgengine/router"
+	"github.com/qwenode/tailscale/wgengine/wgcfg"
 	"go4.org/mem"
-	"tailscale.com/net/dns"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/tstun"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
-	"tailscale.com/tstime/mono"
-	"tailscale.com/types/key"
-	"tailscale.com/types/netmap"
-	"tailscale.com/wgengine/router"
-	"tailscale.com/wgengine/wgcfg"
 )
 
 func TestNoteReceiveActivity(t *testing.T) {

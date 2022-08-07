@@ -20,8 +20,8 @@ import (
 	"net/netip"
 	"sync/atomic"
 
-	"tailscale.com/net/netknob"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/net/netknob"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 var disabled atomic.Bool

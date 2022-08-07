@@ -28,14 +28,14 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/client/tailscale/apitype"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/netutil"
+	"github.com/qwenode/tailscale/paths"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/tailcfg"
 	"go4.org/mem"
-	"tailscale.com/client/tailscale/apitype"
-	"tailscale.com/ipn"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/netutil"
-	"tailscale.com/paths"
-	"tailscale.com/safesocket"
-	"tailscale.com/tailcfg"
 )
 
 // defaultLocalClient is the default LocalClient when using the legacy

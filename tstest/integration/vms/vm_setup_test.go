@@ -30,8 +30,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/feature/s3/manager"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
 	"github.com/pkg/sftp"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.org/x/crypto/ssh"
-	"tailscale.com/types/logger"
 )
 
 type vmInstance struct {

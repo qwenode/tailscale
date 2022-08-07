@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/types/dnstype"
 	dns "golang.org/x/net/dns/dnsmessage"
-	"tailscale.com/hostinfo"
-	"tailscale.com/types/dnstype"
 )
 
 func (rr resolverAndDelay) String() string {

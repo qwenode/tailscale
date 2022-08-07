@@ -8,8 +8,8 @@
 package controlclient
 
 import (
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 // signRegisterRequest on non-supported platforms always returns errNoCertStore.

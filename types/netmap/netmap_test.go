@@ -9,10 +9,10 @@ import (
 	"net/netip"
 	"testing"
 
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
 	"go4.org/mem"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
 )
 
 func testNodeKey(b byte) (ret key.NodePublic) {

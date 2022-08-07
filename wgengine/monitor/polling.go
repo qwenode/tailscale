@@ -15,8 +15,8 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/net/interfaces"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/net/interfaces"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func newPollingMon(logf logger.Logf, m *Mon) (osMon, error) {

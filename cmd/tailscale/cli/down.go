@@ -10,7 +10,7 @@ import (
 	"fmt"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/ipn"
+	"github.com/qwenode/tailscale/ipn"
 )
 
 var downCmd = &ffcli.Command{

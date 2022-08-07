@@ -25,14 +25,14 @@ import (
 	"time"
 
 	"github.com/peterbourgon/ff/v3/ffcli"
-	"tailscale.com/control/controlhttp"
-	"tailscale.com/hostinfo"
-	"tailscale.com/ipn"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/paths"
-	"tailscale.com/safesocket"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/control/controlhttp"
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/paths"
+	"github.com/qwenode/tailscale/safesocket"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 var debugCmd = &ffcli.Command{

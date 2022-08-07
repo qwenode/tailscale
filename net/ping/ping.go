@@ -17,10 +17,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/types/logger"
 	"golang.org/x/net/icmp"
 	"golang.org/x/net/ipv4"
-	"tailscale.com/net/netns"
-	"tailscale.com/types/logger"
 )
 
 type response struct {

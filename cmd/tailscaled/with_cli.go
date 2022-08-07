@@ -11,7 +11,7 @@ import (
 	"fmt"
 	"os"
 
-	"tailscale.com/cmd/tailscale/cli"
+	"github.com/qwenode/tailscale/cmd/tailscale/cli"
 )
 
 func init() {

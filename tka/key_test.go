@@ -11,7 +11,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"tailscale.com/types/tkatype"
+	"github.com/qwenode/tailscale/types/tkatype"
 )
 
 // returns a random source based on the test name + extraSeed.

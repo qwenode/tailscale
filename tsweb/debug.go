@@ -15,7 +15,7 @@ import (
 	"os"
 	"runtime"
 
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/version"
 )
 
 // DebugHandler is an http.Handler that serves a debugging "homepage",

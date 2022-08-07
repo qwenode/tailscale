@@ -16,9 +16,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"tailscale.com/envknob"
-	"tailscale.com/tailcfg"
-	"tailscale.com/util/multierr"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/util/multierr"
 )
 
 var (

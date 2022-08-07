@@ -4,7 +4,7 @@
 
 package tailcfg
 
-//go:generate go run tailscale.com/cmd/viewer --type=User,Node,Hostinfo,NetInfo,Login,DNSConfig,RegisterResponse,DERPRegion,DERPMap,DERPNode,SSHRule,SSHPrincipal --clonefunc
+//go:generate go run github.com/qwenode/tailscale/cmd/viewer --type=User,Node,Hostinfo,NetInfo,Login,DNSConfig,RegisterResponse,DERPRegion,DERPMap,DERPNode,SSHRule,SSHPrincipal --clonefunc
 
 import (
 	"encoding/hex"
@@ -15,11 +15,11 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/types/dnstype"
-	"tailscale.com/types/key"
-	"tailscale.com/types/opt"
-	"tailscale.com/types/structs"
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/types/dnstype"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/opt"
+	"github.com/qwenode/tailscale/types/structs"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 // CapabilityVersion represents the client's capability level. That
@@ -213,8 +213,8 @@ type Node struct {
 	// Capabilities are capabilities that the node has.
 	// They're free-form strings, but should be in the form of URLs/URIs
 	// such as:
-	//    "https://tailscale.com/cap/is-admin"
-	//    "https://tailscale.com/cap/file-sharing"
+	//    "https://github.com/qwenode/tailscale/cap/is-admin"
+	//    "https://github.com/qwenode/tailscale/cap/file-sharing"
 	Capabilities []string `json:",omitempty"`
 
 	// The following three computed fields hold the various names that can
@@ -755,7 +755,7 @@ func (st SignatureType) String() string {
 // It is encoded to JSON, encrypted with golang.org/x/crypto/nacl/box,
 // using the local machine key, and sent to:
 //
-//	https://login.tailscale.com/machine/<mkey hex>
+//	https://login.github.com/qwenode/tailscale/machine/<mkey hex>
 type RegisterRequest struct {
 	_ structs.Incomparable
 
@@ -875,7 +875,7 @@ type Endpoint struct {
 // The request is encoded to JSON, encrypted with golang.org/x/crypto/nacl/box,
 // using the local machine key, and sent to:
 //
-//	https://login.tailscale.com/machine/<mkey hex>/map
+//	https://login.github.com/qwenode/tailscale/machine/<mkey hex>/map
 type MapRequest struct {
 	// Version is incremented whenever the client code changes enough that
 	// we want to signal to the control server that we're capable of something
@@ -1502,28 +1502,28 @@ const (
 	// These are the capabilities that the self node has as listed in
 	// MapResponse.Node.Capabilities.
 
-	CapabilityFileSharing = "https://tailscale.com/cap/file-sharing"
-	CapabilityAdmin       = "https://tailscale.com/cap/is-admin"
-	CapabilitySSH         = "https://tailscale.com/cap/ssh"         // feature enabled/available
-	CapabilitySSHRuleIn   = "https://tailscale.com/cap/ssh-rule-in" // some SSH rule reach this node
+	CapabilityFileSharing = "https://github.com/qwenode/tailscale/cap/file-sharing"
+	CapabilityAdmin       = "https://github.com/qwenode/tailscale/cap/is-admin"
+	CapabilitySSH         = "https://github.com/qwenode/tailscale/cap/ssh"         // feature enabled/available
+	CapabilitySSHRuleIn   = "https://github.com/qwenode/tailscale/cap/ssh-rule-in" // some SSH rule reach this node
 
 	// These are the capabilities that the peer nodes have as listed in
 	// MapResponse.Peers[].Capabilities.
 
 	// CapabilityFileSharingTarget grants the current node the ability to send
 	// files to the peer which has this capability.
-	CapabilityFileSharingTarget = "https://tailscale.com/cap/file-sharing-target"
+	CapabilityFileSharingTarget = "https://github.com/qwenode/tailscale/cap/file-sharing-target"
 
 	// Inter-node capabilities as specified in the MapResponse.PacketFilter[].CapGrants.
 
 	// CapabilityFileSharingSend grants the ability to receive files from a
 	// node that's owned by a different user.
-	CapabilityFileSharingSend = "https://tailscale.com/cap/file-send"
+	CapabilityFileSharingSend = "https://github.com/qwenode/tailscale/cap/file-send"
 	// CapabilityDebugPeer grants the ability for a peer to read this node's
 	// goroutines, metrics, magicsock internal state, etc.
-	CapabilityDebugPeer = "https://tailscale.com/cap/debug-peer"
+	CapabilityDebugPeer = "https://github.com/qwenode/tailscale/cap/debug-peer"
 	// CapabilityWakeOnLAN grants the ability to send a Wake-On-LAN packet.
-	CapabilityWakeOnLAN = "https://tailscale.com/cap/wake-on-lan"
+	CapabilityWakeOnLAN = "https://github.com/qwenode/tailscale/cap/wake-on-lan"
 )
 
 // SetDNSRequest is a request to add a DNS record.
@@ -1534,7 +1534,7 @@ const (
 // The request is encoded to JSON, encrypted with golang.org/x/crypto/nacl/box,
 // using the local machine key, and sent to:
 //
-//	https://login.tailscale.com/machine/<mkey hex>/set-dns
+//	https://login.github.com/qwenode/tailscale/machine/<mkey hex>/set-dns
 type SetDNSRequest struct {
 	// Version is the client's capabilities
 	// (CurrentCapabilityVersion) when using the Noise transport.

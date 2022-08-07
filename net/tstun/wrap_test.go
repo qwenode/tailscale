@@ -14,18 +14,18 @@ import (
 	"testing"
 	"unsafe"
 
+	"github.com/qwenode/tailscale/disco"
+	"github.com/qwenode/tailscale/net/netaddr"
+	"github.com/qwenode/tailscale/net/packet"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/tstime/mono"
+	"github.com/qwenode/tailscale/types/ipproto"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine/filter"
 	"go4.org/mem"
 	"go4.org/netipx"
 	"golang.zx2c4.com/wireguard/tun/tuntest"
-	"tailscale.com/disco"
-	"tailscale.com/net/netaddr"
-	"tailscale.com/net/packet"
-	"tailscale.com/tstest"
-	"tailscale.com/tstime/mono"
-	"tailscale.com/types/ipproto"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine/filter"
 )
 
 func udp4(src, dst string, sport, dport uint16) []byte {

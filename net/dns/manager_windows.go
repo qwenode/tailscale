@@ -14,12 +14,12 @@ import (
 	"syscall"
 	"time"
 
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/dnsname"
 	"golang.org/x/sys/windows"
 	"golang.org/x/sys/windows/registry"
 	"golang.zx2c4.com/wireguard/windows/tunnel/winipcfg"
-	"tailscale.com/envknob"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/dnsname"
 )
 
 const (

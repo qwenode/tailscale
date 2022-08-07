@@ -13,8 +13,8 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/qwenode/tailscale/types/key"
 	"go4.org/mem"
-	"tailscale.com/types/key"
 )
 
 type ParseError struct {

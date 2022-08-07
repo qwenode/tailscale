@@ -22,7 +22,7 @@ import (
 	"strconv"
 	"sync"
 
-	"tailscale.com/types/opt"
+	"github.com/qwenode/tailscale/types/opt"
 )
 
 var (

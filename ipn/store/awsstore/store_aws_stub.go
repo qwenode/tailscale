@@ -11,8 +11,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"tailscale.com/ipn"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func New(logger.Logf, string) (ipn.StateStore, error) {

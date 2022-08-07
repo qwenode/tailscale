@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/qwenode/tailscale/util/mak"
 	"golang.org/x/tools/go/packages"
 	"golang.org/x/tools/imports"
-	"tailscale.com/util/mak"
 )
 
 // LoadTypes returns all named types in pkgName, keyed by their type name.

@@ -6,7 +6,7 @@
 
 package wgengine
 
-import "tailscale.com/net/dns/resolver"
+import "github.com/qwenode/tailscale/net/dns/resolver"
 
 type watchdogEngine struct {
 	Engine

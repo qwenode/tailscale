@@ -12,7 +12,7 @@ import (
 	"net/url"
 	"testing"
 
-	"tailscale.com/net/socks5"
+	"github.com/qwenode/tailscale/net/socks5"
 )
 
 func TestSplitSOCKSAndHTTP(t *testing.T) {

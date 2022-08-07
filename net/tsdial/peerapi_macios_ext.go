@@ -17,7 +17,7 @@ import (
 	"net"
 	"syscall"
 
-	"tailscale.com/net/netns"
+	"github.com/qwenode/tailscale/net/netns"
 )
 
 func init() {

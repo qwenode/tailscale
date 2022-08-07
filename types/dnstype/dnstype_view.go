@@ -11,10 +11,10 @@ import (
 	"errors"
 	"net/netip"
 
-	"tailscale.com/types/views"
+	"github.com/qwenode/tailscale/types/views"
 )
 
-//go:generate go run tailscale.com/cmd/cloner  -clonefunc=true -type=Resolver
+//go:generate go run github.com/qwenode/tailscale/cmd/cloner  -clonefunc=true -type=Resolver
 
 // View returns a readonly view of Resolver.
 func (p *Resolver) View() ResolverView {

@@ -7,7 +7,7 @@ package router
 import (
 	"sync"
 
-	"tailscale.com/net/dns"
+	"github.com/qwenode/tailscale/net/dns"
 )
 
 // CallbackRouter is an implementation of both Router and dns.OSConfigurator.

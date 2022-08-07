@@ -14,11 +14,11 @@ import (
 	"io"
 	"log"
 
-	"tailscale.com/envknob"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/structs"
-	"tailscale.com/version"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/structs"
+	"github.com/qwenode/tailscale/version"
 )
 
 type readOnlyContextKey struct{}

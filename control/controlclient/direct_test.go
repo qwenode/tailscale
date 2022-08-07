@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/hostinfo"
-	"tailscale.com/ipn/ipnstate"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/key"
+	"github.com/qwenode/tailscale/hostinfo"
+	"github.com/qwenode/tailscale/ipn/ipnstate"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/key"
 )
 
 func TestNewDirect(t *testing.T) {

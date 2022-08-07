@@ -8,9 +8,9 @@ import (
 	"crypto/ed25519"
 	"crypto/subtle"
 
+	"github.com/qwenode/tailscale/types/structs"
+	"github.com/qwenode/tailscale/types/tkatype"
 	"go4.org/mem"
-	"tailscale.com/types/structs"
-	"tailscale.com/types/tkatype"
 )
 
 const (

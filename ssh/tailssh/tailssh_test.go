@@ -26,16 +26,16 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/ipn/ipnlocal"
-	"tailscale.com/ipn/store/mem"
-	"tailscale.com/net/tsdial"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tempfork/gliderlabs/ssh"
-	"tailscale.com/tstest"
-	"tailscale.com/types/logger"
-	"tailscale.com/util/cibuild"
-	"tailscale.com/util/lineread"
-	"tailscale.com/wgengine"
+	"github.com/qwenode/tailscale/ipn/ipnlocal"
+	"github.com/qwenode/tailscale/ipn/store/mem"
+	"github.com/qwenode/tailscale/net/tsdial"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tempfork/gliderlabs/ssh"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/util/cibuild"
+	"github.com/qwenode/tailscale/util/lineread"
+	"github.com/qwenode/tailscale/wgengine"
 )
 
 func TestMatchRule(t *testing.T) {

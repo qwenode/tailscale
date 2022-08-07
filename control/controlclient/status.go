@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"reflect"
 
-	"tailscale.com/types/empty"
-	"tailscale.com/types/netmap"
-	"tailscale.com/types/persist"
-	"tailscale.com/types/structs"
+	"github.com/qwenode/tailscale/types/empty"
+	"github.com/qwenode/tailscale/types/netmap"
+	"github.com/qwenode/tailscale/types/persist"
+	"github.com/qwenode/tailscale/types/structs"
 )
 
 // State is the high-level state of the client. It is used only in

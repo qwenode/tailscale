@@ -20,13 +20,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/qwenode/tailscale/ipn"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/tstest"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/wgengine"
+	"github.com/qwenode/tailscale/wgengine/filter"
 	"go4.org/netipx"
-	"tailscale.com/ipn"
-	"tailscale.com/tailcfg"
-	"tailscale.com/tstest"
-	"tailscale.com/types/logger"
-	"tailscale.com/wgengine"
-	"tailscale.com/wgengine/filter"
 )
 
 type peerAPITestEnv struct {

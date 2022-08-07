@@ -19,18 +19,18 @@ import (
 	"time"
 
 	"github.com/coreos/go-iptables/iptables"
+	"github.com/qwenode/tailscale/envknob"
+	"github.com/qwenode/tailscale/net/tsaddr"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/types/preftype"
+	"github.com/qwenode/tailscale/util/multierr"
+	"github.com/qwenode/tailscale/version/distro"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 	"github.com/tailscale/netlink"
 	"go4.org/netipx"
 	"golang.org/x/sys/unix"
 	"golang.org/x/time/rate"
 	"golang.zx2c4.com/wireguard/tun"
-	"tailscale.com/envknob"
-	"tailscale.com/net/tsaddr"
-	"tailscale.com/types/logger"
-	"tailscale.com/types/preftype"
-	"tailscale.com/util/multierr"
-	"tailscale.com/version/distro"
-	"tailscale.com/wgengine/monitor"
 )
 
 const (

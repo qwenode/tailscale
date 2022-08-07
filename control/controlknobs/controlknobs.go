@@ -9,7 +9,7 @@ package controlknobs
 import (
 	"sync/atomic"
 
-	"tailscale.com/envknob"
+	"github.com/qwenode/tailscale/envknob"
 )
 
 // disableUPnP indicates whether to attempt UPnP mapping.

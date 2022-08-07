@@ -12,8 +12,8 @@ import (
 	"errors"
 	"net"
 
-	"tailscale.com/net/netns"
-	"tailscale.com/wgengine/monitor"
+	"github.com/qwenode/tailscale/net/netns"
+	"github.com/qwenode/tailscale/wgengine/monitor"
 )
 
 func init() {
