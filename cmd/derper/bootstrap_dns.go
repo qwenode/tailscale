@@ -14,7 +14,7 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/syncs"
+	"github.com/qwenode/tailscale/syncs"
 )
 
 var dnsCache syncs.AtomicValue[[]byte]
