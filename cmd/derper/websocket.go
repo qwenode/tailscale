@@ -11,8 +11,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/qwenode/tailscale/derp"
 	"nhooyr.io/websocket"
-	"tailscale.com/derp"
 )
 
 var counterWebSocketAccepts = expvar.NewInt("derp_websocket_accepts")

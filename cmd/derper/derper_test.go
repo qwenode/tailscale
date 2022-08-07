@@ -9,7 +9,7 @@ import (
 	"net"
 	"testing"
 
-	"tailscale.com/net/stun"
+	"github.com/qwenode/tailscale/net/stun"
 )
 
 func TestProdAutocertHostPolicy(t *testing.T) {

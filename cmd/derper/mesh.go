@@ -13,10 +13,10 @@ import (
 	"strings"
 	"time"
 
-	"tailscale.com/derp"
-	"tailscale.com/derp/derphttp"
-	"tailscale.com/types/key"
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/derp/derphttp"
+	"github.com/qwenode/tailscale/types/key"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func startMesh(s *derp.Server) error {
