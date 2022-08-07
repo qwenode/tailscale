@@ -1,9 +1,7 @@
-module tailscale.com
+module github.com/qwenode/tailscale
 
 go 1.19
-replace (
-	tailscale.com main => github.com/qwenode/tailscale main
-)
+
 require (
 	filippo.io/mkcert v1.4.3
 	github.com/akutz/memconn v0.1.0

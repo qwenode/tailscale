@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 // The derper binary is a simple DERP server.
-package main // import "tailscale.com/cmd/derper"
+package main // import "github.com/qwenode/tailscale/cmd/derper"
 
 import (
 	"context"
@@ -25,14 +25,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/qwenode/tailscale/atomicfile"
+	"github.com/qwenode/tailscale/derp"
+	"github.com/qwenode/tailscale/derp/derphttp"
+	"github.com/qwenode/tailscale/metrics"
+	"github.com/qwenode/tailscale/net/stun"
+	"github.com/qwenode/tailscale/tsweb"
+	"github.com/qwenode/tailscale/types/key"
 	"golang.org/x/time/rate"
-	"tailscale.com/atomicfile"
-	"tailscale.com/derp"
-	"tailscale.com/derp/derphttp"
-	"tailscale.com/metrics"
-	"tailscale.com/net/stun"
-	"tailscale.com/tsweb"
-	"tailscale.com/types/key"
 )
 
 var (
