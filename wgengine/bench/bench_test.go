@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func BenchmarkTrivialNoAlloc(b *testing.B) {

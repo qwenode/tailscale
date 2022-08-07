@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"tailscale.com/util/dnsname"
+	"github.com/qwenode/tailscale/util/dnsname"
 )
 
 func TestParse(t *testing.T) {

@@ -13,7 +13,7 @@ import (
 	"strings"
 	"testing"
 
-	"tailscale.com/util/cibuild"
+	"github.com/qwenode/tailscale/util/cibuild"
 )
 
 func TestInQemu(t *testing.T) {
@@ -54,7 +54,7 @@ func TestInQemu(t *testing.T) {
 				"test",
 				"--exec="+execVia,
 				"-v",
-				"tailscale.com/tstest/archtest",
+				"github.com/qwenode/tailscale/tstest/archtest",
 			)
 			cmd.Env = append(os.Environ(), "GOARCH="+arch.Goarch)
 			out, err := cmd.CombinedOutput()

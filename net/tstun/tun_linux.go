@@ -11,8 +11,8 @@ import (
 	"strings"
 	"syscall"
 
-	"tailscale.com/types/logger"
-	"tailscale.com/version/distro"
+	"github.com/qwenode/tailscale/types/logger"
+	"github.com/qwenode/tailscale/version/distro"
 )
 
 func init() {

@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"tailscale.com/types/preftype"
+	"github.com/qwenode/tailscale/types/preftype"
 )
 
 //lint:ignore U1000 used in Windows/Linux tests only

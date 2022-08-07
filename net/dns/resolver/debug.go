@@ -12,7 +12,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"tailscale.com/health"
+	"github.com/qwenode/tailscale/health"
 )
 
 func init() {

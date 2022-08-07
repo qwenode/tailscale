@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	"tailscale.com/util/uniq"
+	"github.com/qwenode/tailscale/util/uniq"
 )
 
 func runTests(t *testing.T, cb func(*[]uint32)) {

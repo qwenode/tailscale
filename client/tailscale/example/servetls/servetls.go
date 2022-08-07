@@ -11,7 +11,7 @@ import (
 	"log"
 	"net/http"
 
-	"tailscale.com/client/tailscale"
+	"github.com/qwenode/tailscale/client/tailscale"
 )
 
 func main() {

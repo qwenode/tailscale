@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"tailscale.com/version/distro"
+	"github.com/qwenode/tailscale/version/distro"
 )
 
 func init() {

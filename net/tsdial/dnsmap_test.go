@@ -8,8 +8,8 @@ import (
 	"reflect"
 	"testing"
 
-	"tailscale.com/tailcfg"
-	"tailscale.com/types/netmap"
+	"github.com/qwenode/tailscale/tailcfg"
+	"github.com/qwenode/tailscale/types/netmap"
 )
 
 func nodeViews(v []*tailcfg.Node) []tailcfg.NodeView {

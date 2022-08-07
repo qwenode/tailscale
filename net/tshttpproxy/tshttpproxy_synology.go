@@ -17,7 +17,7 @@ import (
 	"sync"
 	"time"
 
-	"tailscale.com/util/lineread"
+	"github.com/qwenode/tailscale/util/lineread"
 )
 
 // These vars are overridden for tests.

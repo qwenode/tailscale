@@ -4,7 +4,7 @@
 // Package apitype contains types for the Tailscale LocalAPI and control plane API.
 package apitype
 
-import "tailscale.com/tailcfg"
+import "github.com/qwenode/tailscale/tailcfg"
 
 // LocalAPIHost is the Host header value used by the LocalAPI.
 const LocalAPIHost = "local-tailscaled.sock"

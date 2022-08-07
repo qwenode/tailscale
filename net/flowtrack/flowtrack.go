@@ -15,7 +15,7 @@ import (
 	"fmt"
 	"net/netip"
 
-	"tailscale.com/types/ipproto"
+	"github.com/qwenode/tailscale/types/ipproto"
 )
 
 // MakeTuple makes a Tuple out of netip.AddrPort values.

@@ -18,7 +18,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"tailscale.com/tstest"
+	"github.com/qwenode/tailscale/tstest"
 )
 
 // Google Wifi

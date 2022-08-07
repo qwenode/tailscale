@@ -6,7 +6,7 @@
 package netmon
 
 import (
-	"tailscale.com/types/logger"
+	"github.com/qwenode/tailscale/types/logger"
 )
 
 func newOSMon(logf logger.Logf, m *Monitor) (osMon, error) {
